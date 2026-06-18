@@ -17,6 +17,6 @@ export default function robots(): MetadataRoute.Robots {
                 allow: '/',
             },
         ],
-        sitemap: 'https://cybersecureduk.com/sitemap.xml',
+        sitemap: 'https://ziopvt.com/sitemap.xml',
     };
 }

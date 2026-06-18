@@ -1,16 +1,22 @@
 .footer {
   background-color: var(--deep-navy); /* #021125 */
   color: var(--text-light-muted); /* #94A3B8 */
-  padding: 5rem 0 2rem;
+  padding: 5rem 2rem 2rem;
   border-top: 4px solid;
   border-image: linear-gradient(
       to right,
       var(--deep-navy),
-      var(--primary-blue),
+      var(--secondary-gss),
       var(--deep-navy)
     )
     1;
   font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .mainGrid {
@@ -62,7 +68,7 @@
 
 .socialIcon:hover {
   opacity: 1;
-  background: var(--primary-blue);
+  background: var(--secondary-gss);
   transform: translateY(-2px);
 }
 
@@ -75,7 +81,7 @@
 
 .colTitle {
   font-family: "Montserrat", sans-serif;
-  color: var(--primary-blue);
+  color: var(--secondary-gss);
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -102,7 +108,7 @@
 .links a:hover {
   color: var(--white);
   text-decoration: underline;
-  text-decoration-color: var(--primary-blue);
+  text-decoration-color: var(--secondary-gss);
   transform: translateX(3px);
 }
 

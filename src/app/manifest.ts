@@ -2,9 +2,9 @@ import type { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
     return {
-        name: 'Cyber Security & Digital Forensics UK',
-        short_name: 'CSDF UK',
-        description: 'Professional cyber security services provider specialising in defensive security, digital forensics, and incident response across the United Kingdom.',
+        name: 'Zio Enterprises',
+        short_name: 'Zio Enterprises',
+        description: 'Professional taxation, Income Tax Return (ITR) e-filing, GST returns, web design, local SEO, GMB setup, QA audits, and custom software development.',
         start_url: '/',
         display: 'standalone',
         background_color: '#0A1628',

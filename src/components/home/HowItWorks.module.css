@@ -1,0 +1,210 @@
+.section {
+  background: var(--deep-navy);
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(13,124,91,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13,124,91,0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+
+.section::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(13,124,91,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.label {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--secondary-gss);
+  margin-bottom: 0.75rem;
+}
+
+.heading {
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  font-size: 1rem;
+  color: var(--text-light-muted);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+  perspective: 1000px;
+}
+
+.stepCard {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  position: relative;
+  transition: all 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.stepCard:hover {
+  background: rgba(255,255,255,0.07);
+  border-color: var(--step-color, var(--secondary-gss));
+  box-shadow: 0 0 30px color-mix(in srgb, var(--step-color, var(--secondary-gss)) 20%, transparent);
+  transform: translateY(-6px) !important;
+}
+
+.stepNumWrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  width: 60px;
+  height: 60px;
+}
+
+.stepNum {
+  font-size: 1.6rem;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  color: var(--step-color, var(--secondary-gss));
+  opacity: 0.9;
+  line-height: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.stepRing {
+  position: absolute;
+  inset: 0;
+  border: 2px solid var(--step-color, var(--secondary-gss));
+  border-radius: 50%;
+  opacity: 0.25;
+  animation: ringPulse 3s ease-in-out infinite;
+}
+
+.stepCard:hover .stepRing {
+  opacity: 0.6;
+}
+
+.stepIconBox {
+  margin-bottom: 1.25rem;
+}
+
+.stepIcon {
+  font-size: 2.2rem;
+  filter: drop-shadow(0 0 12px var(--step-color, var(--secondary-gss)));
+}
+
+.stepTitle {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+
+.stepDesc {
+  font-size: 0.9rem;
+  color: var(--text-light-muted);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.stepItems {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stepItems li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+  color: rgba(248,250,252,0.6);
+}
+
+.checkDot {
+  width: 6px;
+  height: 6px;
+  background: var(--step-color, var(--secondary-gss));
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 6px var(--step-color, var(--secondary-gss));
+}
+
+.connector {
+  position: absolute;
+  top: 3.5rem;
+  right: -1.2rem;
+  width: 2.4rem;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(13,124,91,0.5), transparent);
+  z-index: 2;
+}
+
+.connector::after {
+  content: '›';
+  position: absolute;
+  right: -8px;
+  top: -10px;
+  color: rgba(13,124,91,0.5);
+  font-size: 1.2rem;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 3.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.ctaNote {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-light-muted);
+}
+
+@keyframes ringPulse {
+  0%, 100% { transform: scale(1); opacity: 0.25; }
+  50%       { transform: scale(1.15); opacity: 0.1; }
+}
+
+@media (max-width: 900px) {
+  .stepsGrid { grid-template-columns: 1fr; }
+  .connector { display: none; }
+}

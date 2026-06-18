@@ -9,33 +9,32 @@ export default function Internship() {
                 <div className={styles.wrapper}>
                     {/* Left Column: Content */}
                     <div className={styles.content}>
-                        <span className={styles.label}>INTERNSHIP PROGRAM</span>
-                        <h2 className={styles.heading}>Launch Your Cyber Security Career</h2>
+                        <span className={styles.label}>PRACTICAL TRAINING PROGRAM</span>
+                        <h2 className={styles.heading}>Launch Your Career in Tax, Marketing or IT</h2>
 
                         <p className={styles.description}>
-                            Join our industry-leading internship program, derived from Cyber Secured India's
-                            proven excellence. Gain hands-on experience with real-world projects, expert
-                            mentorship, and career-ready skills.
+                            Join our expert-led programs covering GST/ITR compliance, company registrations, 
+                            web design & development, GMB local SEO, Meta/Google ads, and WhatsApp campaign automation.
                         </p>
 
                         <div className={styles.highlights}>
                             <div className={styles.listCol}>
-                                <h4 className={styles.listTitle}>Training Focus:</h4>
+                                <h4 className={styles.listTitle}>Taxation Focus:</h4>
                                 <ul className={styles.list}>
-                                    <li><Check size={18} className={styles.checkIcon} /> Ethical Hacking & Penetration Testing</li>
-                                    <li><Check size={18} className={styles.checkIcon} /> Digital Forensics Investigation</li>
-                                    <li><Check size={18} className={styles.checkIcon} /> Cyber Crime Analysis</li>
-                                    <li><Check size={18} className={styles.checkIcon} /> Network Security</li>
+                                    <li><Check size={18} className={styles.checkIcon} /> GST & ITR E-Filing & Audits</li>
+                                    <li><Check size={18} className={styles.checkIcon} /> Company Registration (Pvt Ltd/LLP)</li>
+                                    <li><Check size={18} className={styles.checkIcon} /> Tally Prime & Balance Sheets</li>
+                                    <li><Check size={18} className={styles.checkIcon} /> Import Export (IEC) & FSSAI Licensing</li>
                                 </ul>
                             </div>
 
                             <div className={styles.listCol}>
-                                <h4 className={styles.listTitle}>What You Get:</h4>
+                                <h4 className={styles.listTitle}>IT & Digital Focus:</h4>
                                 <ul className={styles.list}>
-                                    <li><Check size={18} className={styles.checkIcon} /> Live project experience</li>
-                                    <li><Check size={18} className={styles.checkIcon} /> Industry certification prep</li>
-                                    <li><Check size={18} className={styles.checkIcon} /> Expert mentorship</li>
-                                    <li><Check size={18} className={styles.checkIcon} /> Career placement support</li>
+                                    <li><Check size={18} className={styles.checkIcon} /> Static & Dynamic Web design (React/Next)</li>
+                                    <li><Check size={18} className={styles.checkIcon} /> Website QA Bug & Performance Audits</li>
+                                    <li><Check size={18} className={styles.checkIcon} /> Local SEO & GMB profile optimization</li>
+                                    <li><Check size={18} className={styles.checkIcon} /> Google/Meta Ads & WhatsApp Campaigns</li>
                                 </ul>
                             </div>
                         </div>

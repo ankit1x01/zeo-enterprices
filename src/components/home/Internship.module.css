@@ -1,6 +1,6 @@
 .section {
   padding: 6rem 0;
-  background-color: var(--primary-blue); /* #0056D2 */
+  background-color: var(--primary-gss);
   color: var(--white);
   overflow: hidden;
 }
@@ -61,7 +61,7 @@
   font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: var(--electric-blue); /* Accent color for subtitles inside blue */
+  color: var(--accent-gss);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .checkIcon {
-  color: var(--electric-blue);
+  color: var(--accent-gss);
   flex-shrink: 0;
   margin-top: 2px;
 }
@@ -95,7 +95,7 @@
   justify-content: center;
   gap: 0.75rem;
   background: var(--white);
-  color: var(--primary-blue);
+  color: var(--primary-gss);
   padding: 1.2rem 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -165,7 +165,7 @@
   width: 40px;
   height: 40px;
   background: var(--white);
-  color: var(--primary-blue);
+  color: var(--primary-gss);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,7 +177,7 @@
 
 .imageCard:hover .cardArrow {
   transform: translateX(5px);
-  background: var(--electric-blue);
+  background: var(--accent-gss);
   color: var(--white);
 }
 

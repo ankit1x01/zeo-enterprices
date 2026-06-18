@@ -1,47 +1,47 @@
 import type { Metadata } from 'next';
 
 export const aboutMetadata: Metadata = {
-    title: 'About Us - Cyber Security & Digital Forensics UK',
-    description: 'Learn about Cyber Security & Digital Forensics UK Ltd., our professional cyber security services, standards, and expertise in defensive security and digital forensics.',
+    title: 'About Us - Zio Enterprises',
+    description: 'Learn about Zio Enterprises, our professional taxation services, IT solutions, digital marketing, GMB setup, QA audits, and custom software development.',
     openGraph: {
-        title: 'About CSDF UK',
-        description: 'Professional cyber security and digital forensics services provider in the United Kingdom.',
-        url: 'https://cybersecureduk.com/about',
+        title: 'About Zio Enterprises',
+        description: 'Professional taxation, SEO, GMB, and IT development services provider.',
+        url: 'https://ziopvt.com/about',
     },
 };
 
 export const servicesMetadata: Metadata = {
-    title: 'Our Services - Cyber Security & Digital Forensics UK',
-    description: 'Comprehensive cyber security services including consulting, digital forensics, incident response, vulnerability assessment, and security training.',
+    title: 'Our Services - Zio Enterprises',
+    description: 'Comprehensive services including taxation (ITR & GST returns), custom software engineering, GMB local SEO, Meta/Google ads management, and web/app development.',
     openGraph: {
-        title: 'Cyber Security Services - CSDF UK',
-        description: 'Professional cyber security consulting, digital forensics, and incident response services.',
-        url: 'https://cybersecureduk.com/services',
+        title: 'Taxation, SEO & IT Development Services - Zio Enterprises',
+        description: 'Professional tax compliance, local SEO, website QA audits, Google My Business, and custom software development services.',
+        url: 'https://ziopvt.com/services',
     },
 };
 
 export const internshipMetadata: Metadata = {
-    title: 'Internship Program - Launch Your Cyber Security Career',
-    description: 'Join our industry-leading cyber security internship program. Gain hands-on experience with ethical hacking, digital forensics, and real-world projects.',
+    title: 'Internship Program - Launch Your Career in Tax, Marketing or IT',
+    description: 'Join our industry-leading internship program. Gain hands-on experience in taxation, GST compliance, digital marketing, or full-stack software development.',
     openGraph: {
-        title: 'Cyber Security Internship - CSDF UK',
-        description: 'Professional internship program in ethical hacking, digital forensics, and cyber security.',
-        url: 'https://cybersecureduk.com/internship',
+        title: 'Tax, SEO & IT Internship - Zio Enterprises',
+        description: 'Professional internship program in taxation compliance, digital marketing, and software engineering.',
+        url: 'https://ziopvt.com/internship',
     },
 };
 
 export const contactMetadata: Metadata = {
-    title: 'Contact Us - Get Expert Cyber Security Support',
-    description: 'Contact Cyber Security & Digital Forensics UK for professional cyber security consulting, incident response, and digital forensics services.',
+    title: 'Contact Us - Zio Enterprises',
+    description: 'Contact Zio Enterprises for professional taxation consultation, GST/ITR filings, local GMB setup, and custom software development projects.',
     openGraph: {
-        title: 'Contact CSDF UK',
-        description: 'Get in touch with our cyber security experts.',
-        url: 'https://cybersecureduk.com/contact',
+        title: 'Contact Zio Enterprises',
+        description: 'Get in touch with our tax consultants, SEO specialists, and IT development experts.',
+        url: 'https://ziopvt.com/contact',
     },
 };
 
 export const privacyMetadata: Metadata = {
-    title: 'Privacy Policy - Cyber Security & Digital Forensics UK',
+    title: 'Privacy Policy - Zio Enterprises',
     description: 'Read our privacy policy to understand how we collect, use, and protect your personal information.',
     robots: {
         index: true,
@@ -50,8 +50,8 @@ export const privacyMetadata: Metadata = {
 };
 
 export const termsMetadata: Metadata = {
-    title: 'Terms & Conditions - Cyber Security & Digital Forensics UK',
-    description: 'Terms and conditions for using our cyber security services and website.',
+    title: 'Terms & Conditions - Zio Enterprises',
+    description: 'Terms and conditions for using our taxation services, custom software, and website.',
     robots: {
         index: true,
         follow: true,
@@ -59,7 +59,7 @@ export const termsMetadata: Metadata = {
 };
 
 export const cookiesMetadata: Metadata = {
-    title: 'Cookie Policy - Cyber Security & Digital Forensics UK',
+    title: 'Cookie Policy - Zio Enterprises',
     description: 'Learn about how we use cookies on our website and how to manage your preferences.',
     robots: {
         index: true,

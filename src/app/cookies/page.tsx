@@ -18,7 +18,7 @@ export default function CookiesPage() {
 
                     <section>
                         <h2>2. How We Use Cookies</h2>
-                        <p>Cyber Secured UK uses cookies for the following purposes:</p>
+                        <p>Zio Enterprises uses cookies for the following purposes:</p>
                         <ul>
                             <li>To enable essential website functionality</li>
                             <li>To remember your preferences and settings</li>
@@ -100,8 +100,8 @@ export default function CookiesPage() {
                         <h2>8. Contact Us</h2>
                         <p>If you have questions about our use of cookies:</p>
                         <address>
-                            <strong>Cyber Security and Digital Forensics UK Ltd.</strong><br />
-                            Email: nikhil@csdfuk.com<br />
+                            <strong>Zio Enterprises</strong><br />
+                            Email: ziopvt@zohomail.in<br />
                         </address>
                     </section>
 
@@ -110,7 +110,6 @@ export default function CookiesPage() {
                         <p>For more information about privacy and data protection:</p>
                         <ul>
                             <li>Read our <a href="/privacy">Privacy Policy</a></li>
-                            <li>Visit the Information Commissioner's Office: www.ico.org.uk</li>
                         </ul>
                     </section>
                 </div>

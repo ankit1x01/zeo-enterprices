@@ -1,61 +1,71 @@
 import Footer from '@/components/layout/Footer';
 import Navbar from '@/components/layout/Navbar';
-import { CheckCircle, Code, Globe, HardDrive, Network, ShieldAlert, Terminal } from 'lucide-react';
+import { 
+    CheckCircle, 
+    Building2, 
+    Receipt, 
+    Briefcase, 
+    Landmark, 
+    Globe, 
+    FileText,
+    Code,
+    Laptop
+} from 'lucide-react';
 import styles from './internship.module.css';
 
 export default function InternshipPage() {
     const domains = [
         {
-            title: "Ethical Hacking",
-            icon: <ShieldAlert size={28} />,
+            title: "GST Filing & Compliance",
+            icon: <Receipt size={28} />,
             duration: "4-8 Weeks",
-            skills: "Penetration testing, vulnerability assessment, exploit development",
-            tools: "Kali Linux, Burp Suite, Metasploit, Nmap"
+            skills: "GST registrations, GSTR-1 & GSTR-3B monthly filings, cancellations, surrenders, and late fee reconciliation",
+            tools: "GST Portal, E-Way Bill System"
         },
         {
-            title: "Digital Forensics",
-            icon: <HardDrive size={28} />,
+            title: "Direct Taxation (ITR)",
+            icon: <Briefcase size={28} />,
             duration: "4-8 Weeks",
-            skills: "Evidence acquisition, analysis, reporting",
-            tools: "FTK, EnCase, Autopsy, Volatility"
+            skills: "ITR-1 to ITR-4 filing, TDS returns, crypto tax calculations, and tax notice management",
+            tools: "Income Tax E-filing Portal"
         },
         {
-            title: "Cyber Crime Investigation",
-            icon: <Terminal size={28} />, // Representative
+            title: "Corporate Setup & Licensing",
+            icon: <Building2 size={28} />,
             duration: "4-6 Weeks",
-            skills: "Case analysis, evidence handling, legal procedures",
-            focus: "UK cyber crime laws and procedures"
+            skills: "Incorporating Private Limited companies/LLPs, MSME Udyam setup, FSSAI food licensing, and Import Export (IEC) registrations",
+            tools: "MCA Portal, FSSAI FoSCoS, DGFT Portal"
         },
         {
-            title: "Web Application Security",
+            title: "Website Design & Development",
             icon: <Globe size={28} />,
-            duration: "4-6 Weeks",
-            skills: "OWASP Top 10, secure coding, code review",
-            tools: "Burp Suite, OWASP ZAP, SQLMap"
+            duration: "4-8 Weeks",
+            skills: "Designing static & dynamic websites, responsive landing pages, UI/UX prototyping, and domain+hosting setups",
+            tools: "Next.js, React, VS Code, Git, CSS Modules"
         },
         {
-            title: "Network Security",
-            icon: <Network size={28} />,
-            duration: "4-6 Weeks",
-            skills: "Firewall configuration, IDS/IPS, network monitoring",
-            tools: "Wireshark, Snort, pfSense"
-        },
-        {
-            title: "Python for Security",
+            title: "GMB Local SEO & Ads",
             icon: <Code size={28} />,
-            duration: "4-6 Weeks",
-            skills: "Security scripting, automation, tool development",
-            projects: "Build custom security tools"
+            duration: "6-8 Weeks",
+            skills: "Google My Business profile creation, map verifications, suspension removal, local SEO ranking, and Google/Meta Ads lead campaigns",
+            tools: "Google Business Profile, Ads Manager"
+        },
+        {
+            title: "QA Audits & E-Commerce",
+            icon: <Laptop size={28} />,
+            duration: "8-12 Weeks",
+            skills: "QA site testing (resolving 404s, page crashes, slow loading), and e-commerce seller onboarding for Amazon/Flipkart",
+            tools: "Browser DevTools, Amazon Seller Central, Flipkart Partner Panel"
         }
     ];
 
     const benefits = [
-        "Live project experience",
-        "Industry-recognized certification preparation",
-        "Expert mentorship from professionals",
-        "Portfolio development",
-        "Career placement assistance",
-        "Flexible online/hybrid options"
+        "Live client file case studies (GST/ITR filings, web design & marketing)",
+        "Hands-on training with government portals & professional SEO/dev tools",
+        "Direct mentorship from experienced CAs, SEO analysts, and Web Engineers",
+        "Practical understanding of accounting software & Git/Ads workflows",
+        "Official Internship Certificate and recommendation letters",
+        "Career placement and reference support within Zio Enterprises"
     ];
 
     return (
@@ -65,9 +75,9 @@ export default function InternshipPage() {
             {/* Hero */}
             <section className={styles.hero}>
                 <div className="container">
-                    <h1 className={styles.heroHeading}>Cyber Security Internship Program</h1>
+                    <h1 className={styles.heroHeading}>Taxation, SEO & IT Development Internship</h1>
                     <p className={styles.heroSubheading}>
-                        Gain real-world experience with industry experts
+                        Gain real-world finance compliance, local SEO, or web development experience under CA & IT mentors
                     </p>
                 </div>
             </section>
@@ -76,8 +86,8 @@ export default function InternshipPage() {
             <section className={styles.overview}>
                 <div className="container">
                     <p className={styles.overviewText}>
-                        Our internship program, developed from Cyber Secured India's proven training methodology,
-                        provides hands-on experience in cutting-edge cyber security and digital forensics.
+                        Our practical training program, derived from Zio Enterprises' proven compliance services, local SEO campaigns, and custom web development practices,
+                        equips finance, commerce, and IT students with the skills required to thrive in modern accounting and digital technology firms.
                     </p>
                 </div>
             </section>
@@ -91,7 +101,10 @@ export default function InternshipPage() {
                         {domains.map((domain, index) => (
                             <div key={index} className={styles.card}>
                                 <div className={styles.cardHeader}>
-                                    <div className={styles.cardTitle}>{domain.title}</div>
+                                    <div className={styles.cardTitle}>
+                                        <span className={styles.cardIcon}>{domain.icon}</span>
+                                        {domain.title}
+                                    </div>
                                     <span className={styles.durationBadge}>{domain.duration}</span>
                                 </div>
 
@@ -102,22 +115,8 @@ export default function InternshipPage() {
 
                                 {domain.tools && (
                                     <div className={styles.cardSection}>
-                                        <span className={styles.cardLabel}>Tools</span>
+                                        <span className={styles.cardLabel}>Main Systems / Portals</span>
                                         <p className={styles.cardText}>{domain.tools}</p>
-                                    </div>
-                                )}
-
-                                {domain.focus && (
-                                    <div className={styles.cardSection}>
-                                        <span className={styles.cardLabel}>Focus</span>
-                                        <p className={styles.cardText}>{domain.focus}</p>
-                                    </div>
-                                )}
-
-                                {domain.projects && (
-                                    <div className={styles.cardSection}>
-                                        <span className={styles.cardLabel}>Projects</span>
-                                        <p className={styles.cardText}>{domain.projects}</p>
                                     </div>
                                 )}
                             </div>
@@ -141,7 +140,7 @@ export default function InternshipPage() {
                     </div>
 
                     <div className={styles.ctaContainer}>
-                        <a href="/contact" className={styles.applyButton}>Apply Now</a>
+                        <a href="/contact" className={styles.applyButton}>Apply for Internship</a>
                     </div>
                 </div>
             </section>

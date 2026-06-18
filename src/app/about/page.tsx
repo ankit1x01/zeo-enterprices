@@ -18,9 +18,9 @@ export default function AboutPage() {
                             <span>›</span>
                             <span>About Us</span>
                         </div>
-                        <h1 className={styles.heroTitle}>About CSDF UK</h1>
+                        <h1 className={styles.heroTitle}>About Zio Enterprises</h1>
                         <p className={styles.heroSubtitle}>
-                            Leading the UK&apos;s cyber security and digital forensics initiatives
+                            Leading taxation, SEO, GMB local rankings, and custom web development solutions
                         </p>
                     </div>
                 </div>
@@ -35,17 +35,16 @@ export default function AboutPage() {
 
                             <div className={styles.aboutText}>
                                 <p>
-                                    <strong>Cyber Security and Digital Forensics UK Ltd.</strong> is a professional cyber security
-                                    services provider specialising in defensive security, digital forensics, and incident response.
+                                    <strong>Zio Enterprises</strong> is a premier professional services firm specialising in taxation compliance, 
+                                    Income Tax Return (ITR) filings, GMB setup, local SEO, website QA audits, and custom web development.
                                 </p>
                                 <p>
-                                    We help organisations identify vulnerabilities, respond to cyber incidents, preserve digital
-                                    evidence, and strengthen their security posture in line with UK and international standards.
+                                    We help startups, small businesses, and large enterprises navigate complex tax filings, maintain precise 
+                                    financial auditing, execute digital marketing campaigns, and design custom high-performance web platforms.
                                 </p>
                                 <p>
-                                    Our approach combines technical expertise, investigative accuracy, and practical risk
-                                    management — ensuring security solutions that are not only effective, but legally and
-                                    operationally sound.
+                                    Our approach combines chartered accounting excellence, SEO & digital marketing expertise, and web development mastery 
+                                    — ensuring your business registrations, Google local rankings, and web systems are optimized for maximum growth.
                                 </p>
                             </div>
                         </div>
@@ -59,9 +58,9 @@ export default function AboutPage() {
                                 <div className={styles.aboutImageCardArrow}>→</div>
                             </div>
                             <div className={styles.aboutImageCard}>
-                                <img src="/uk-operations.png" alt="UK Operations" />
+                                <img src="/india-operations.png" alt="India Operations" />
                                 <div className={styles.aboutImageCardContent}>
-                                    <h4>UK Operations</h4>
+                                    <h4>India Operations</h4>
                                 </div>
                                 <div className={styles.aboutImageCardArrow}>→</div>
                             </div>
@@ -73,14 +72,14 @@ export default function AboutPage() {
             {/* Why Choose Us Section */}
             <section className={styles.whyChooseSection}>
                 <div className="container">
-                    <h2 className={styles.sectionTitle}>Why Choose Cyber Security & Digital Forensics UK</h2>
+                    <h2 className={styles.sectionTitle}>Why Choose Zio Enterprises</h2>
                     <div className={styles.whyChooseGrid}>
                         {[
-                            { icon: "🇬🇧", text: "UK-focused cyber security and forensic expertise" },
-                            { icon: "📋", text: "Evidence-driven and legally defensible methodologies" },
-                            { icon: "📊", text: "Clear reporting for technical and non-technical stakeholders" },
-                            { icon: "🔒", text: "Confidential handling of sensitive cases and data" },
-                            { icon: "💼", text: "Practical, real-world experience across security and investigations" }
+                            { icon: "💼", text: "Chartered Accountants & Web Experts under one roof" },
+                            { icon: "📋", text: "100% Tax compliance, accurate e-filings, and GST return setup" },
+                            { icon: "💻", text: "Custom static & dynamic web design and app development" },
+                            { icon: "🔍", text: "Professional website QA audits to fix 404s, performance, & crashes" },
+                            { icon: "📈", text: "Proven GMB Local SEO setup and Google/Meta Ads lead generation" }
                         ].map((point, i) => (
                             <div key={i} className={styles.whyChooseCard}>
                                 <span className={styles.whyChooseIcon}>{point.icon}</span>
@@ -98,20 +97,20 @@ export default function AboutPage() {
                         <div className={styles.complianceContent}>
                             <h2 className={styles.sectionTitle}>Standards & Best Practices</h2>
                             <p className={styles.complianceText}>
-                                Our services are aligned with recognised industry frameworks and best practices, including:
+                                Our financial filings and software codebases strictly align with standard frameworks:
                             </p>
                             <ul className={styles.complianceList}>
-                                <li><span className={styles.complianceCheck}>✓</span> ISO/IEC 27001 principles</li>
-                                <li><span className={styles.complianceCheck}>✓</span> NIST Cyber Security Framework</li>
-                                <li><span className={styles.complianceCheck}>✓</span> UK GDPR & Data Protection Act considerations</li>
-                                <li><span className={styles.complianceCheck}>✓</span> ACPO & digital forensic best-practice guidelines</li>
+                                <li><span className={styles.complianceCheck}>✓</span> Income Tax Department & GST portal guidelines</li>
+                                <li><span className={styles.complianceCheck}>✓</span> W3C coding standards and modern web architectures</li>
+                                <li><span className={styles.complianceCheck}>✓</span> MSME and corporate registry (MCA) frameworks</li>
+                                <li><span className={styles.complianceCheck}>✓</span> Secure API development and database encryption</li>
                             </ul>
                         </div>
                         <div className={styles.complianceLogos}>
-                            <div className={styles.complianceBadge}>ISO 27001</div>
-                            <div className={styles.complianceBadge}>NIST</div>
-                            <div className={styles.complianceBadge}>GDPR</div>
-                            <div className={styles.complianceBadge}>ACPO</div>
+                            <div className={styles.complianceBadge}>GST / ITR</div>
+                            <div className={styles.complianceBadge}>REACT</div>
+                            <div className={styles.complianceBadge}>SECURE</div>
+                            <div className={styles.complianceBadge}>MSME</div>
                         </div>
                     </div>
                 </div>

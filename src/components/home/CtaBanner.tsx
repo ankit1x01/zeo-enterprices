@@ -8,16 +8,16 @@ export default function CtaBanner() {
             <div className="container">
                 <div className={styles.wrapper}>
                     <div className={styles.content}>
-                        <h2 className={styles.heading}>Secure Your Digital Assets Today</h2>
+                        <h2 className={styles.heading}>Accelerate Your Business with Zio Enterprises</h2>
                         <p className={styles.text}>
-                            Whether you need cyber security expertise, forensic investigation support,
-                            or professional training — we're here to help.
+                            Whether you need GST/ITR filing, GMB local SEO, website QA audits, 
+                            or custom web development — our CA & IT experts are here to help.
                         </p>
                     </div>
 
                     <div className={styles.action}>
                         <Link href="/contact" className={styles.button}>
-                            Contact Us for a Confidential Discussion <ArrowRight size={20} />
+                            Get in Touch with Our Experts <ArrowRight size={20} />
                         </Link>
                     </div>
                 </div>

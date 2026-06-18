@@ -38,7 +38,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--primary-blue);
+  color: var(--secondary-gss);
   font-weight: 700;
   font-size: 1rem;
   text-transform: uppercase;
@@ -56,7 +56,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--primary-blue);
+  background: var(--secondary-gss);
   transition: width 0.3s ease;
 }
 
@@ -122,7 +122,7 @@
 .arrowBox {
   width: 45px;
   height: 45px;
-  background: var(--primary-blue);
+  background: var(--secondary-gss);
   color: var(--white);
   display: flex;
   align-items: center;
@@ -135,7 +135,7 @@
 
 .imageCard:hover .arrowBox {
   transform: translateX(5px);
-  background: var(--electric-blue);
+  background: var(--accent-gss);
 }
 
 @media (max-width: 968px) {

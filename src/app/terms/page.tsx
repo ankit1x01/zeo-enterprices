@@ -13,21 +13,21 @@ export default function TermsPage() {
 
                     <section>
                         <h2>1. Introduction</h2>
-                        <p>These terms and conditions govern your use of the Cyber Secured UK website. By using this website, you accept these terms and conditions in full. If you disagree with any part of these terms, you must not use our website.</p>
+                        <p>These terms and conditions govern your use of the Zio Enterprises website. By using this website, you accept these terms and conditions in full. If you disagree with any part of these terms, you must not use our website.</p>
                     </section>
 
                     <section>
-                        <h2>2. About Cyber Secured UK</h2>
+                        <h2>2. About Zio Enterprises</h2>
                         <p>
-                            <strong>Company Name:</strong> Cyber Security and Digital Forensics UK Ltd.<br />
-                            <strong>Jurisdiction:</strong> United Kingdom<br />
-                            <strong>Email:</strong> nikhil@csdfuk.com<br />
+                            <strong>Company Name:</strong> Zio Enterprises<br />
+                            <strong>Jurisdiction:</strong> India<br />
+                            <strong>Email:</strong> ziopvt@zohomail.in<br />
                         </p>
                     </section>
 
                     <section>
                         <h2>3. License to Use Website</h2>
-                        <p>Unless otherwise stated, Cyber Secured UK and/or its licensors own the intellectual property rights in the website and material on the website. You may:</p>
+                        <p>Unless otherwise stated, Zio Enterprises and/or its licensors own the intellectual property rights in the website and material on the website. You may:</p>
                         <ul>
                             <li>View pages from our website in a web browser</li>
                             <li>Download pages for caching in a web browser</li>
@@ -38,7 +38,7 @@ export default function TermsPage() {
                             <li>Republish material from this website without attribution</li>
                             <li>Sell, rent, or sub-license material from the website</li>
                             <li>Reproduce or duplicate material for commercial purposes</li>
-                            <li>Redistribute content from Cyber Secured UK (except as permitted by social sharing)</li>
+                            <li>Redistribute content from Zio Enterprises (except as permitted by social sharing)</li>
                         </ul>
                     </section>
 
@@ -56,7 +56,7 @@ export default function TermsPage() {
 
                     <section>
                         <h2>5. User-Generated Content</h2>
-                        <p>If you submit any content to our website (through contact forms, comments, or otherwise), you grant Cyber Secured UK a worldwide, irrevocable, non-exclusive, royalty-free license to use, reproduce, adapt, publish and distribute such content for business purposes.</p>
+                        <p>If you submit any content to our website (through contact forms, comments, or otherwise), you grant Zio Enterprises a worldwide, irrevocable, non-exclusive, royalty-free license to use, reproduce, adapt, publish and distribute such content for business purposes.</p>
                         <p>You warrant that any content you submit does not infringe any third-party intellectual property rights and complies with applicable laws.</p>
                     </section>
 
@@ -73,22 +73,22 @@ export default function TermsPage() {
                             <li>We will not be liable for any loss or damage arising from your use of the website, including (but not limited to) indirect or consequential loss</li>
                             <li>We do not guarantee the accuracy, completeness, or timeliness of information on the website</li>
                         </ul>
-                        <p>Nothing in these terms excludes or limits liability for death or personal injury caused by negligence, fraud, or any liability that cannot be excluded under UK law.</p>
+                        <p>Nothing in these terms excludes or limits liability for any liability that cannot be excluded under applicable law.</p>
                     </section>
 
                     <section>
                         <h2>8. Data Protection and Privacy</h2>
-                        <p>Your use of our website is also governed by our Privacy Policy. We process personal data in accordance with UK GDPR and the Data Protection Act 2018. For information about cookies, please see our Cookie Policy.</p>
+                        <p>Your use of our website is also governed by our Privacy Policy. We process personal data in accordance with applicable regulations. For information about cookies, please see our Cookie Policy.</p>
                     </section>
 
                     <section>
-                        <h2>9. Training Services</h2>
-                        <p>These website terms are separate from our Learner Terms and Conditions, which govern the provision of training courses and educational services. By enrolling in a course, you agree to both sets of terms.</p>
+                        <h2>9. Professional Services</h2>
+                        <p>These website terms are separate from our professional services agreements, which govern the provision of taxation compliance, ITR filings, and IT development services.</p>
                     </section>
 
                     <section>
                         <h2>10. Indemnity</h2>
-                        <p>You agree to indemnify and hold harmless Cyber Secured UK, its directors, employees, and agents from any claims, losses, damages, and expenses (including legal fees) arising from your breach of these terms or misuse of the website.</p>
+                        <p>You agree to indemnify and hold harmless Zio Enterprises, its directors, employees, and agents from any claims, losses, damages, and expenses (including legal fees) arising from your breach of these terms or misuse of the website.</p>
                     </section>
 
                     <section>
@@ -98,7 +98,6 @@ export default function TermsPage() {
                             <li>Issue a warning</li>
                             <li>Suspend or terminate your access to the website</li>
                             <li>Block computers using your IP address from accessing the website</li>
-                            <li>Contact your internet service provider</li>
                             <li>Commence legal proceedings against you</li>
                         </ul>
                     </section>
@@ -115,20 +114,20 @@ export default function TermsPage() {
 
                     <section>
                         <h2>14. Entire Agreement</h2>
-                        <p>These terms, together with our Privacy Policy and Cookie Policy, constitute the entire agreement between you and Cyber Secured UK relating to your use of this website.</p>
+                        <p>These terms, together with our Privacy Policy and Cookie Policy, constitute the entire agreement between you and Zio Enterprises relating to your use of this website.</p>
                     </section>
 
                     <section>
                         <h2>15. Governing Law and Jurisdiction</h2>
-                        <p>These terms are governed by and construed in accordance with the laws of England and Wales. Any disputes relating to these terms will be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+                        <p>These terms are governed by and construed in accordance with the laws of India. Any disputes relating to these terms will be subject to the exclusive jurisdiction of the courts in Gwalior, India.</p>
                     </section>
 
                     <section>
                         <h2>16. Contact Information</h2>
                         <p>If you have any questions about these terms:</p>
                         <address>
-                            <strong>Cyber Security and Digital Forensics UK Ltd.</strong><br />
-                            Email: nikhil@csdfuk.com<br />
+                            <strong>Zio Enterprises</strong><br />
+                            Email: ziopvt@zohomail.in<br />
                         </address>
                     </section>
                 </div>

@@ -2,12 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;500;600&display=swap");
 
 :root {
-  /* Brand Colors - Cyber Secured UK */
-  --primary-blue: #0056d2;
-  --secondary-blue: #004bb5; /* Darker shade for hover */
-  --deep-navy: #021125;
-  --electric-blue: #00a3ff;
-  --blue-glow: rgba(0, 163, 255, 0.3);
+  /* Brand Colors - GST Suvidha Support (GSS) */
+  --primary-gss: #0b2b5c;      /* Trustworthy Corporate Navy */
+  --primary-gss-hover: #081e42;
+  --secondary-gss: #0d7c5b;    /* Financial Growth Emerald/Teal */
+  --secondary-gss-hover: #0a6348;
+  --accent-gss: #e59f1c;       /* Gold/Amber Highlight */
+  --accent-gss-glow: rgba(229, 159, 28, 0.3);
+  --deep-navy: #030d1a;        /* Sleek Background Navy */
+  --emerald-glow: rgba(13, 124, 91, 0.2);
 
   /* Neutral Colors */
   --white: #ffffff;
@@ -16,37 +19,35 @@
   --gray-200: #e2e8f0;
   --gray-300: #cbd5e1;
   --gray-700: #334155;
-  --black: #0f172a;
+  --black: #080d16;
 
   /* Text Colors */
   --text-primary: #0f172a;
-  --text-secondary: #475569;
+  --text-secondary: #334155;
   --text-muted: #64748b;
   --text-light: #f8fafc;
   --text-light-muted: #94a3b8;
 
   /* Mapping for Compatibility */
   --background: #ffffff;
-  --foreground: #0f172a;
-  --primary: var(--primary-blue);
-  --primary-dark: var(--secondary-blue);
-  --secondary: var(--off-white);
-  --accent: var(--electric-blue);
-  --yellow: var(
-    --primary-blue
-  ); /* Re-mapping old variable to keep layout intact */
-  --yellow-dark: var(--secondary-blue);
-  --yellow-glow: var(--blue-glow);
+  --foreground: #080d16;
+  --primary: var(--primary-gss);
+  --primary-dark: var(--primary-gss-hover);
+  --secondary: var(--secondary-gss);
+  --accent: var(--accent-gss);
+  --yellow: var(--accent-gss);
+  --yellow-dark: #b87e14;
+  --yellow-glow: var(--accent-gss-glow);
 
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-md:
-    0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
   --shadow-lg:
     0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --shadow-xl:
     0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --shadow-blue: 0 0 20px var(--blue-glow);
+  --shadow-gss: 0 0 20px var(--emerald-glow);
 
   /* Transitions */
   --transition-fast: 0.15s ease;
@@ -163,14 +164,14 @@ img {
 }
 
 .btn-primary {
-  background: var(--primary-blue);
+  background: var(--primary-gss);
   color: var(--white);
   box-shadow: var(--shadow-md);
 }
 
 .btn-primary:hover {
-  background: var(--secondary-blue);
-  box-shadow: var(--shadow-blue);
+  background: var(--primary-gss-hover);
+  box-shadow: var(--shadow-gss);
   transform: translateY(-2px);
 }
 
@@ -210,24 +211,24 @@ img {
 .glass-card:hover {
   box-shadow: var(--shadow-xl);
   transform: translateY(-4px);
-  border-left: 4px solid var(--primary-blue);
+  border-left: 4px solid var(--secondary-gss);
   border-color: var(--gray-200); /* Keep other borders subtle */
 }
 
-/* Yellow Accent -> Blue Accent classes */
+/* Accent classes */
 .accent-line {
   width: 2px;
   height: 60px;
-  background: linear-gradient(to bottom, var(--electric-blue), transparent);
+  background: linear-gradient(to bottom, var(--secondary-gss), transparent);
   margin: 2rem auto;
 }
 
 .accent-dot {
   width: 12px;
   height: 12px;
-  background: var(--electric-blue);
+  background: var(--accent-gss);
   border-radius: 50%;
-  box-shadow: 0 0 15px var(--blue-glow);
+  box-shadow: 0 0 15px var(--accent-gss-glow);
 }
 
 /* Selection Color */

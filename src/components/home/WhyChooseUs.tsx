@@ -1,27 +1,32 @@
-import { BarChart, Briefcase, FileCheck, Lock, MapPin } from 'lucide-react';
+import { Users, Zap, FileCheck, Lock, TrendingUp } from 'lucide-react';
 import styles from './WhyChooseUs.module.css';
 
 export default function WhyChooseUs() {
     const features = [
         {
-            icon: <MapPin size={28} />,
-            text: "UK-focused cyber security and forensic expertise"
+            icon: <Users size={28} />,
+            title: "CA-Assisted Filing",
+            text: "Every ITR is reviewed and filed by a qualified Chartered Accountant, not software alone."
+        },
+        {
+            icon: <Zap size={28} />,
+            title: "48-Hour Turnaround",
+            text: "From document submission to ITR-V acknowledgement — typically completed within 48 hours."
         },
         {
             icon: <FileCheck size={28} />,
-            text: "Evidence-driven and legally defensible methodologies"
-        },
-        {
-            icon: <BarChart size={28} />,
-            text: "Clear reporting for technical and non-technical stakeholders"
+            title: "Maximum Refund",
+            text: "We apply all applicable deductions (80C, 80D, HRA, LTA) to legally minimize your tax and maximize refund."
         },
         {
             icon: <Lock size={28} />,
-            text: "Confidential handling of sensitive cases and data"
+            title: "Data Security",
+            text: "Your financial documents are handled with bank-level confidentiality and never shared with third parties."
         },
         {
-            icon: <Briefcase size={28} />,
-            text: "Practical, real-world experience across security and investigations"
+            icon: <TrendingUp size={28} />,
+            title: "Transparent Pricing",
+            text: "Flat-fee ITR filing plans with zero hidden charges. Know what you pay before you start."
         }
     ];
 
@@ -29,7 +34,7 @@ export default function WhyChooseUs() {
         <section className={styles.section}>
             <div className="container">
                 <div className={styles.header}>
-                    <h2 className={styles.heading}>Why Choose Cyber Security & Digital Forensics UK</h2>
+                    <h2 className={styles.heading}>Why File With Zio Enterprises?</h2>
                     <div className={styles.accentLine}></div>
                 </div>
 
@@ -39,6 +44,7 @@ export default function WhyChooseUs() {
                             <div className={styles.iconWrapper}>
                                 {feature.icon}
                             </div>
+                            <h3 className={styles.cardTitle}>{feature.title}</h3>
                             <p className={styles.text}>{feature.text}</p>
                         </div>
                     ))}

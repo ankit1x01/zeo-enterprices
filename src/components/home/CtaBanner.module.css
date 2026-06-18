@@ -1,5 +1,5 @@
 .section {
-  background-color: var(--primary-blue); /* #0056D2 */
+  background-color: var(--primary-gss);
   padding: 5rem 0;
   color: var(--white);
 }

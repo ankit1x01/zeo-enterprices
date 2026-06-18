@@ -1,0 +1,134 @@
+.section {
+  background: var(--white);
+  padding: 6rem 0;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.left {
+  position: sticky;
+  top: 6rem;
+}
+
+.label {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--secondary-gss);
+  margin-bottom: 0.75rem;
+}
+
+.heading {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.subtext {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1.75rem;
+}
+
+.waBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--secondary-gss);
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+}
+
+.waBtn:hover {
+  background: var(--secondary-gss-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(13,124,91,0.3);
+}
+
+.accordionCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.item {
+  border-bottom: 1px solid var(--gray-200);
+  transition: all 0.2s ease;
+}
+
+.item:first-child {
+  border-top: 1px solid var(--gray-200);
+}
+
+.openItem {
+  background: var(--gray-100);
+  border-radius: 12px;
+  border-color: transparent !important;
+  margin: 0.25rem 0;
+}
+
+.openItem + .item {
+  border-top: none;
+}
+
+.question {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 1.25rem 1rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4;
+}
+
+.question:hover {
+  color: var(--secondary-gss);
+}
+
+.chevron {
+  flex-shrink: 0;
+  color: var(--text-muted);
+  transition: transform 0.3s ease;
+  margin-top: 2px;
+}
+
+.answer {
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.answer p {
+  padding: 0 1rem 1.25rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; gap: 2.5rem; }
+  .left { position: static; }
+}

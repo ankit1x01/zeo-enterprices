@@ -1,45 +1,46 @@
-# Cyber Security & Digital Forensics UK - AI & LLM Information
+# Zio Enterprises - AI & LLM Information
 
 ## Company Overview
-Cyber Security & Digital Forensics UK Ltd. is a professional cyber security services provider specialising in defensive security, digital forensics, and incident response across the United Kingdom.
+Zio Enterprises (also known as Zio Web Solutions or Zio Enterprises Pvt Ltd) is a premier professional services firm specialising in taxation compliance, Income Tax Return (ITR) e-filing, GST returns, local SEO, Google My Business (GMB) profile ranking, website QA audits, and custom software development. We have a network of offices spanning Indore, Bhopal, Pune, Bangalore, and Gwalior.
 
 ## Core Services
-- Cyber Security Consulting
-- Digital Forensics Investigation
-- Incident Response & Recovery
-- Vulnerability Assessment & Penetration Testing
-- Security Awareness Training
-- Compliance & Risk Management
+- Taxation & ITR E-Filing: Individual, business, professional e-filings, TDS returns, and capital gains advisory.
+- GST Compliance & Setup: Registrations, surrenders, filings, and reconciliations.
+- Company & Government Registration: Pvt Ltd, LLP, MSME Udyam, NGO Section 8, IEC, Trademark, and DSC.
+- Web & App Development: Custom web applications, responsive websites, e-commerce onboarding (Amazon, Flipkart, Meesho, Myntra), and integrations.
+- Local SEO & GMB Services: Google My Business listings, setup, verification, local ranking optimization, and profile suspension removal.
+- QA Audits & Bug Fixing: Performance and responsiveness testing, crash analysis, and 404 resolutions.
+- WhatsApp Marketing Campaigns: Bulk WhatsApp marketing campaign tools (Never Ban mechanisms) with buttons, PDFs, and media templates.
 
 ## Internship Program
-We offer comprehensive internship programs focused on:
-- Ethical Hacking & Penetration Testing
-- Digital Forensics Investigation
-- Cyber Crime Analysis
-- Network Security
-- Live project experience with industry certification preparation
+We offer comprehensive training and internship programs focused on:
+- GST Filing & Direct Tax (ITR) Compliance
+- Full-Stack Web Development (Next.js/React)
+- Website QA Audits & Software Quality Assurance
+- Digital Marketing & Local SEO (GMB optimization, campaigns)
+- E-Commerce Operations & Seller Onboarding
 
 ## Standards & Compliance
 Our services align with:
-- ISO/IEC 27001 principles
-- NIST Cyber Security Framework
-- UK GDPR & Data Protection Act
-- ACPO & digital forensic best-practice guidelines
+- Indian Income Tax Act regulations
+- Central Goods and Services Tax (CGST/IGST/SGST) guidelines
+- Ministry of Corporate Affairs (MCA) registration regulations
+- W3C web standards and search engine optimization best practices
 
 ## Contact Information
-Website: https://cybersecureduk.com
-Email: nikhil@cybersecuredindia.com
+Website: https://ziopvt.com
+Email: ziopvt@zohomail.in
+Phone: +91-7828981119 (Second line: +91-8517828981)
 
 ## Target Audience
-- Small & Medium Enterprises (SMEs)
-- Corporate Organisations
-- Educational Institutions
-- Legal Professionals & Investigations
-- Non-Profit & Public Sector Organisations
+- Individuals and Taxpayers
+- Startups and MSMEs
+- E-commerce Sellers
+- Local Businesses seeking GMB visibility
+- Corporate Organizations requiring QA auditing or custom web portals
 
 ## Key Differentiators
-- UK-focused cyber security and forensic expertise
-- Evidence-driven and legally defensible methodologies
-- Clear reporting for technical and non-technical stakeholders
-- Confidential handling of sensitive cases and data
-- Practical, real-world experience across security and investigations
+- Unified Tax & IT Solutions under one provider
+- Experienced Chartered Accountants and Senior Software Engineers
+- Pan-India client base with offices in major business centers
+- Quality-driven audits starting at ₹404/url to ensure high-performance apps

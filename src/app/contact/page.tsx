@@ -2,6 +2,7 @@ import Footer from '@/components/layout/Footer';
 import Navbar from '@/components/layout/Navbar';
 import { Mail, MapPin, Phone } from 'lucide-react';
 import styles from './contact.module.css';
+import Interactive3DGlobe from '@/components/contact/Interactive3DGlobe';
 
 export default function ContactPage() {
     return (
@@ -13,7 +14,7 @@ export default function ContactPage() {
                 <div className="container">
                     <h1 className={styles.heroHeading}>Get In Touch</h1>
                     <p className={styles.heroSubheading}>
-                        Let's discuss how we can help secure your organisation
+                        Let's discuss how we can help with your tax compliance, GMB SEO & Web development needs
                     </p>
                 </div>
             </section>
@@ -26,7 +27,7 @@ export default function ContactPage() {
                         <div className={styles.infoCol}>
                             <h2 className={styles.infoTitle}>Contact Information</h2>
                             <p className={styles.infoText}>
-                                Reach out to our team for a confidential discussion about your security needs.
+                                Reach out to our team for a professional discussion about your taxation, SEO rankings, QA audits, or web development needs.
                             </p>
 
                             <div className={styles.contactDetails}>
@@ -34,7 +35,7 @@ export default function ContactPage() {
                                     <div className={styles.iconBox}><Mail size={24} /></div>
                                     <div>
                                         <h4 className={styles.itemLabel}>Email</h4>
-                                        <a href="mailto:nikhil@csdfuk.com" className={styles.itemLink}>nikhil@csdfuk.com</a>
+                                        <a href="mailto:ziopvt@zohomail.in" className={styles.itemLink}>ziopvt@zohomail.in</a>
                                     </div>
                                 </div>
 
@@ -42,7 +43,7 @@ export default function ContactPage() {
                                     <div className={styles.iconBox}><Phone size={24} /></div>
                                     <div>
                                         <h4 className={styles.itemLabel}>Phone</h4>
-                                        <a href="tel:+447946630285" className={styles.itemLink}>+44 7946 630285</a>
+                                        <a href="tel:+917828981119" className={styles.itemLink}>+91-7828981119, +91-8517828981</a>
                                     </div>
                                 </div>
 
@@ -50,15 +51,15 @@ export default function ContactPage() {
                                     <div className={styles.iconBox}><MapPin size={24} /></div>
                                     <div>
                                         <h4 className={styles.itemLabel}>Location</h4>
-                                        <p className={styles.itemText}>71-75 Shelton Street, Covent Garden, London, United Kingdom, WC2H 9JQ.</p>
+                                        <p className={styles.itemText}>Offices: Indore, Bhopal, Pune, Bangalore, Gwalior | Main: Siddheshwar Nagar, Gwalior</p>
                                     </div>
                                 </div>
                             </div>
 
                             <div className={styles.emergencyBox}>
-                                <h4>Urgent Security Incident?</h4>
-                                <p>For immediate assistance with a breach or cyber attack:</p>
-                                <a href="mailto:nikhil@csdfuk.com">nikhil@csdfuk.com</a>
+                                <h4>Need Immediate Assistance?</h4>
+                                <p>For urgent taxation queries, SEO rankings or web code issues:</p>
+                                <a href="mailto:ziopvt@zohomail.in">ziopvt@zohomail.in</a>
                             </div>
                         </div>
 
@@ -77,7 +78,7 @@ export default function ContactPage() {
 
                                 <div className={styles.formGroup}>
                                     <label htmlFor="phone">Phone Number</label>
-                                    <input type="tel" id="phone" name="phone" placeholder="+44 ..." />
+                                    <input type="tel" id="phone" name="phone" placeholder="+91 ..." />
                                 </div>
 
                                 <div className={styles.formGroup}>
@@ -89,10 +90,14 @@ export default function ContactPage() {
                                     <label htmlFor="service">Service Interest</label>
                                     <select id="service" name="service">
                                         <option value="">Select a service...</option>
-                                        <option value="consulting">Cyber Security Consulting</option>
-                                        <option value="forensics">Digital Forensics</option>
-                                        <option value="incident">Incident Response</option>
-                                        <option value="training">Training & Internship</option>
+                                        <option value="itr">Income Tax & ITR Filing</option>
+                                        <option value="gst">GST Returns & Setup</option>
+                                        <option value="company">Company & FSSAI Registration</option>
+                                        <option value="web">Website Development & QA</option>
+                                        <option value="gmb">GMB Setup & Local SEO</option>
+                                        <option value="marketing">Meta & Google Ads</option>
+                                        <option value="whatsapp">WhatsApp Bulk Campaigns</option>
+                                        <option value="internship">Internship Program</option>
                                         <option value="other">Other</option>
                                     </select>
                                 </div>
@@ -105,6 +110,11 @@ export default function ContactPage() {
                                 <button type="submit" className={styles.submitButton}>Send Message →</button>
                             </form>
                         </div>
+                    </div>
+
+                    {/* Interactive 3D Globe Map Section */}
+                    <div style={{ marginTop: '5rem' }}>
+                        <Interactive3DGlobe />
                     </div>
                 </div>
             </section>

@@ -13,21 +13,18 @@ export default function About() {
 
                         <div className={styles.textBlock}>
                             <p>
-                                Cyber Security & Digital Forensics UK is a professional cyber security services provider
-                                specialising in defensive security, digital forensics, and incident response.
+                                Zio Enterprises is a premier CA firm specialising in Income Tax Return (ITR) e-filing, GST compliance, and tax planning for individuals, businesses, and NRIs.
                             </p>
                             <p>
-                                We help organisations identify vulnerabilities, respond to cyber incidents, preserve
-                                digital evidence, and strengthen their security posture in line with UK and international standards.
+                                We have helped over 50,000 taxpayers maximize refunds and stay fully compliant — with expert filing for ITR-1 through ITR-7, GST registration, MSME setup, and company incorporation.
                             </p>
                             <p>
-                                Our approach combines technical expertise, investigative accuracy, and practical risk
-                                management — ensuring security solutions that are not only effective, but legally and operationally sound.
+                                Our team of Chartered Accountants combines deep tax law expertise with modern digital workflows, ensuring your returns are filed accurately, on time, and always in your best financial interest.
                             </p>
                         </div>
 
                         <Link href="/about" className={styles.link}>
-                            Learn more about us <ArrowRight size={18} className={styles.linkIcon} />
+                            Learn more about Zio Enterprises <ArrowRight size={18} className={styles.linkIcon} />
                         </Link>
                     </div>
 
@@ -35,18 +32,18 @@ export default function About() {
                     <div className={styles.images}>
                         {/* Card 1 */}
                         <div className={styles.imageCard}>
-                            <img src="/team-meeting.png" alt="Our Team" />
+                            <img src="/team-meeting.png" alt="Our Experts" />
                             <div className={styles.imageOverlay}>
-                                <h3>Our Team</h3>
+                                <h3>Our Experts</h3>
                                 <div className={styles.arrowBox}>→</div>
                             </div>
                         </div>
 
                         {/* Card 2 */}
                         <div className={styles.imageCard}>
-                            <img src="/uk-operations.png" alt="UK Operations" />
+                            <img src="/india-operations.png" alt="Pan-India Tax & IT Services" />
                             <div className={styles.imageOverlay}>
-                                <h3>UK Operations</h3>
+                                <h3>Pan-India Services</h3>
                                 <div className={styles.arrowBox}>→</div>
                             </div>
                         </div>

@@ -1,68 +1,92 @@
 import Footer from '@/components/layout/Footer';
 import Navbar from '@/components/layout/Navbar';
-import { CheckCircle, ChevronRight, GraduationCap, Search, Shield, Zap } from 'lucide-react';
+import { 
+    Building2, 
+    Receipt, 
+    Briefcase, 
+    Landmark, 
+    Globe, 
+    ShieldCheck, 
+    FileText, 
+    ChevronRight,
+    MessageSquare
+} from 'lucide-react';
 import styles from './services.module.css';
 
 export default function ServicesPage() {
     const categories = [
         {
-            title: "Vulnerability Assessment & Penetration Testing (VAPT)",
-            icon: <Shield size={32} />,
+            title: "Income Tax & ITR Filing",
+            icon: <Briefcase size={32} />,
             items: [
-                "Web Application Penetration Testing",
-                "Mobile Application Security Testing",
-                "Network Penetration Testing",
-                "API Security Assessment",
-                "Cloud Security Assessment",
-                "Wireless Network Testing"
+                "Individual Tax Return Filing (ITR-1 & ITR-2)",
+                "Business & Professional Tax Returns (ITR-3 & ITR-4)",
+                "Tax Planning, Optimization & Saving Advisory",
+                "Income Tax Notice Management & Response Drafting",
+                "TDS / TCS Return E-Filing & Reconciliation",
+                "Advance Tax Calculation & Reminders",
+                "Capital Gains Tax Advisory (Equity, Property, Crypto)"
             ]
         },
         {
-            title: "Digital Forensics Services",
-            icon: <Search size={32} />,
+            title: "GST Compliance & Setup",
+            icon: <Receipt size={32} />,
             items: [
-                "Computer/Disk Forensics",
-                "Mobile Device Forensics",
-                "Network Forensics",
-                "Memory Forensics",
-                "Email Forensics",
-                "Cloud Forensics",
-                "Social Media Investigation"
+                "GST Registration (Certificate in 5-7 Days)",
+                "Monthly/Quarterly Return Filing (GSTR-1 & GSTR-3B)",
+                "GST Input Tax Credit (ITC) Reconciliation",
+                "GST Final Return (GSTR-10), Cancellation & Surrenders",
+                "Pending Return Clearing & Penalty Appeals",
+                "E-Way Bill System Setup & Training Support"
             ]
         },
         {
-            title: "Incident Response",
-            icon: <Zap size={32} />,
+            title: "Company & Gov Registration",
+            icon: <Building2 size={32} />,
             items: [
-                "24/7 Emergency Response",
-                "Breach Investigation",
-                "Malware Analysis",
-                "Containment & Eradication",
-                "Recovery Planning",
-                "Post-Incident Review"
+                "Private Limited Company (Pvt Ltd) & LLP Incorporation",
+                "One Person Company (OPC) & Partnership Setups",
+                "MSME Udyam Scheme Registration",
+                "NGO & Section 8 Non-Profit Trust Setup",
+                "FSSAI Food Safety Licensing (Basic, State, Central)",
+                "Import Export Code (IEC Code) Registration",
+                "Class 3 Digital Signature Certificates (DSC) Issuance"
             ]
         },
         {
-            title: "Compliance & Consulting",
-            icon: <CheckCircle size={32} />,
+            title: "Website Design & Development",
+            icon: <Globe size={32} />,
             items: [
-                "ISO 27001 Implementation",
-                "GDPR Compliance Assessment",
-                "Security Policy Development",
-                "Risk Assessment",
-                "Security Audits",
-                "Virtual CISO Services"
+                "Static & Dynamic Responsive Website Design",
+                "Custom Web Applications & SaaS MVPs",
+                "E-Commerce Store Setup (Shopify, WooCommerce)",
+                "Amazon, Flipkart, Myntra, Meesho Seller Onboarding",
+                "Free Domain name, SSL & Hosting Server Configuration",
+                "Payment Gateway Integration & WhatsApp API Setup"
             ]
         },
         {
-            title: "Training & Certification",
-            icon: <GraduationCap size={32} />,
+            title: "Google My Business & SEO",
+            icon: <Landmark size={32} />,
             items: [
-                "Corporate Training Programs",
-                "Academic Partnerships",
-                "Certification Preparation (CEH, CHFI, etc.)",
-                "Security Awareness Workshops",
-                "Custom Training Solutions"
+                "Google My Business (GMB) Listing Creation & Setup",
+                "GMB Verification & Maps Local Ranking SEO",
+                "GMB Profile Suspension Removal & Recovery Services",
+                "On-Page, Off-Page, and Content Keyword SEO Research",
+                "Meta Ads (Facebook/Instagram Lead Generation Campaigns)",
+                "Google Search, Display & local Call Campaigns"
+            ]
+        },
+        {
+            title: "QA Audits & WhatsApp Campaigns",
+            icon: <FileText size={32} />,
+            items: [
+                "Website QA Audits to fix 404s, page freezes & crashes",
+                "Page Load Speed & Mobile responsiveness audits",
+                "QA Audits start at just ₹404/url with full reporting",
+                "Bulk WhatsApp Marketing Campaign Tool Setup",
+                "Send bulk WhatsApp images, videos, PDFs & interactive buttons",
+                "Meta-Approved bulk campaigns (Never Ban mechanisms)"
             ]
         }
     ];
@@ -76,8 +100,8 @@ export default function ServicesPage() {
                 <div className="container">
                     <h1 className={styles.heroHeading}>Our Services</h1>
                     <p className={styles.heroSubheading}>
-                        Comprehensive cyber security solutions tailored to your needs.
-                        Protecting your digital assets with expert precision.
+                        Professional financial tax filings, GMB local SEO, website QA audits, 
+                        and custom web solutions delivered by CA and IT experts.
                     </p>
                 </div>
             </section>
@@ -86,7 +110,7 @@ export default function ServicesPage() {
             <section className={styles.content}>
                 <div className="container">
                     {categories.map((cat, index) => (
-                        <div key={index} id={cat.title.toLowerCase().replace(/\s+/g, '-')} className={styles.categorySection}>
+                        <div key={index} id={cat.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')} className={styles.categorySection}>
                             <div className={styles.categoryHeader}>
                                 <div className={styles.categoryIcon}>
                                     {cat.icon}
@@ -104,6 +128,21 @@ export default function ServicesPage() {
                             </div>
                         </div>
                     ))}
+
+                    {/* WhatsApp Support CTA Card */}
+                    <div className={styles.ctaCard}>
+                        <h2>Need Assistance with Registration or Filings?</h2>
+                        <p>Speak to our representative directly for instant quotes and documents requirements checklists.</p>
+                        <a 
+                            href="https://wa.me/917828981119?text=Hi,%20I'm%20interested%20in%20your%20taxation%20and%20compliance%20services." 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className={styles.ctaButton}
+                        >
+                            <MessageSquare size={20} />
+                            <span>Chat on WhatsApp (+91-7828981119)</span>
+                        </a>
+                    </div>
                 </div>
             </section>
 

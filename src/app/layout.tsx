@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    creator: '@cybersecureduk',
+    creator: '@zioenterprises',
   },
   robots: {
     index: true,
@@ -79,19 +79,21 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "Cyber Security & Digital Forensics UK Ltd.",
-              "alternateName": "CSDF UK",
-              "url": "https://cybersecureduk.com",
-              "logo": "https://cybersecureduk.com/logo.png",
-              "description": "Professional cyber security services provider specialising in defensive security, digital forensics, and incident response across the United Kingdom.",
-              "email": "nikhil@cybersecuredindia.com",
+              "name": siteConfig.name,
+              "alternateName": siteConfig.shortName,
+              "url": siteConfig.url,
+              "logo": `${siteConfig.url}/logo.png`,
+              "description": siteConfig.description,
+              "email": siteConfig.contact.email,
               "address": {
                 "@type": "PostalAddress",
-                "addressCountry": "GB"
+                "addressLocality": "Gwalior",
+                "addressRegion": "Madhya Pradesh",
+                "addressCountry": "IN"
               },
               "areaServed": {
                 "@type": "Country",
-                "name": "United Kingdom"
+                "name": "India"
               }
             })
           }}
