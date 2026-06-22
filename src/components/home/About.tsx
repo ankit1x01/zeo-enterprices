@@ -13,7 +13,7 @@ export default function About() {
 
                         <div className={styles.textBlock}>
                             <p>
-                                Zio Enterprises is a premier CA firm specialising in Income Tax Return (ITR) e-filing, GST compliance, and tax planning for individuals, businesses, and NRIs.
+                                GST Suvidha Support is a premier CA firm specialising in Income Tax Return (ITR) e-filing, GST compliance, and tax planning for individuals, businesses, and NRIs.
                             </p>
                             <p>
                                 We have helped over 50,000 taxpayers maximize refunds and stay fully compliant — with expert filing for ITR-1 through ITR-7, GST registration, MSME setup, and company incorporation.
@@ -24,7 +24,7 @@ export default function About() {
                         </div>
 
                         <Link href="/about" className={styles.link}>
-                            Learn more about Zio Enterprises <ArrowRight size={18} className={styles.linkIcon} />
+                            Learn more about GST Suvidha Support <ArrowRight size={18} className={styles.linkIcon} />
                         </Link>
                     </div>
 

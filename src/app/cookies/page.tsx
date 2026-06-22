@@ -18,7 +18,7 @@ export default function CookiesPage() {
 
                     <section>
                         <h2>2. How We Use Cookies</h2>
-                        <p>Zio Enterprises uses cookies for the following purposes:</p>
+                        <p>GST Suvidha Support uses cookies for the following purposes:</p>
                         <ul>
                             <li>To enable essential website functionality</li>
                             <li>To remember your preferences and settings</li>
@@ -100,8 +100,8 @@ export default function CookiesPage() {
                         <h2>8. Contact Us</h2>
                         <p>If you have questions about our use of cookies:</p>
                         <address>
-                            <strong>Zio Enterprises</strong><br />
-                            Email: ziopvt@zohomail.in<br />
+                            <strong>GST Suvidha Support</strong><br />
+                            Email: support@gstsuvidhasupport.com<br />
                         </address>
                     </section>
 

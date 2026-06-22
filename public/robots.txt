@@ -36,7 +36,7 @@ User-agent: Amazonbot
 Allow: /
 
 # Sitemap
-Sitemap: https://ziopvt.com/sitemap.xml
+Sitemap: https://gstsuvidhasupport.com/sitemap.xml
 
 # LLM-specific information
 # See /llms.txt for AI-readable company information

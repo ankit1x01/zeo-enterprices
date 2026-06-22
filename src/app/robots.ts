@@ -17,6 +17,6 @@ export default function robots(): MetadataRoute.Robots {
                 allow: '/',
             },
         ],
-        sitemap: 'https://ziopvt.com/sitemap.xml',
+        sitemap: 'https://gstsuvidhasupport.com/sitemap.xml',
     };
 }

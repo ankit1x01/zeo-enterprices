@@ -2,8 +2,8 @@ import type { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
     return {
-        name: 'Zio Enterprises',
-        short_name: 'Zio Enterprises',
+        name: 'GST Suvidha Support',
+        short_name: 'GST Suvidha Support',
         description: 'Professional taxation, Income Tax Return (ITR) e-filing, GST returns, web design, local SEO, GMB setup, QA audits, and custom software development.',
         start_url: '/',
         display: 'standalone',

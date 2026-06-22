@@ -9,7 +9,7 @@ export default function Navbar() {
                 <div className={styles.container}>
                     <div className={styles.topRight}>
                         <div className={styles.support}>
-                            <a href="mailto:ziopvt@zohomail.in" className={styles.supportLink}>Support: ziopvt@zohomail.in</a>
+                            <a href="mailto:support@gstsuvidhasupport.com" className={styles.supportLink}>Support: support@gstsuvidhasupport.com</a>
                         </div>
                     </div>
                 </div>
@@ -26,7 +26,7 @@ export default function Navbar() {
                                 <path d="M2 23L16 30L30 23" stroke="var(--secondary-gss)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                             <span style={{ fontSize: '1.4rem', fontWeight: 800, color: 'var(--white)', letterSpacing: '0.5px', fontFamily: '"Montserrat", sans-serif' }}>
-                                Zio <span style={{ color: 'var(--secondary-gss)' }}>Enterprises</span>
+                                GST <span style={{ color: 'var(--secondary-gss)' }}>Suvidha Support</span>
                             </span>
                         </div>
                     </Link>

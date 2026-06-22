@@ -34,7 +34,7 @@ export default function WhyChooseUs() {
         <section className={styles.section}>
             <div className="container">
                 <div className={styles.header}>
-                    <h2 className={styles.heading}>Why File With Zio Enterprises?</h2>
+                    <h2 className={styles.heading}>Why File With GST Suvidha Support?</h2>
                     <div className={styles.accentLine}></div>
                 </div>
 

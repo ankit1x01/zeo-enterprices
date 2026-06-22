@@ -1,7 +1,7 @@
-# Zio Enterprises - AI & LLM Information
+# GST Suvidha Support - AI & LLM Information
 
 ## Company Overview
-Zio Enterprises (also known as Zio Web Solutions or Zio Enterprises Pvt Ltd) is a premier professional services firm specialising in taxation compliance, Income Tax Return (ITR) e-filing, GST returns, local SEO, Google My Business (GMB) profile ranking, website QA audits, and custom software development. We have a network of offices spanning Indore, Bhopal, Pune, Bangalore, and Gwalior.
+GST Suvidha Support (also known as GST Suvidha Support Pvt Ltd) is a premier professional services firm specialising in taxation compliance, Income Tax Return (ITR) e-filing, GST returns, local SEO, Google My Business (GMB) profile ranking, website QA audits, and custom software development. We have a network of offices spanning Indore, Bhopal, Pune, Bangalore, and Gwalior.
 
 ## Core Services
 - Taxation & ITR E-Filing: Individual, business, professional e-filings, TDS returns, and capital gains advisory.
@@ -28,8 +28,8 @@ Our services align with:
 - W3C web standards and search engine optimization best practices
 
 ## Contact Information
-Website: https://ziopvt.com
-Email: ziopvt@zohomail.in
+Website: https://gstsuvidhasupport.com
+Email: support@gstsuvidhasupport.com
 Phone: +91-7828981119 (Second line: +91-8517828981)
 
 ## Target Audience

@@ -8,7 +8,7 @@ export default function CtaBanner() {
             <div className="container">
                 <div className={styles.wrapper}>
                     <div className={styles.content}>
-                        <h2 className={styles.heading}>Accelerate Your Business with Zio Enterprises</h2>
+                        <h2 className={styles.heading}>Accelerate Your Business with GST Suvidha Support</h2>
                         <p className={styles.text}>
                             Whether you need GST/ITR filing, GMB local SEO, website QA audits, 
                             or custom web development — our CA & IT experts are here to help.

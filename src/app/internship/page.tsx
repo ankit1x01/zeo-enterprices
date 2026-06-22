@@ -65,7 +65,7 @@ export default function InternshipPage() {
         "Direct mentorship from experienced CAs, SEO analysts, and Web Engineers",
         "Practical understanding of accounting software & Git/Ads workflows",
         "Official Internship Certificate and recommendation letters",
-        "Career placement and reference support within Zio Enterprises"
+        "Career placement and reference support within GST Suvidha Support"
     ];
 
     return (
@@ -86,7 +86,7 @@ export default function InternshipPage() {
             <section className={styles.overview}>
                 <div className="container">
                     <p className={styles.overviewText}>
-                        Our practical training program, derived from Zio Enterprises' proven compliance services, local SEO campaigns, and custom web development practices,
+                        Our practical training program, derived from GST Suvidha Support's proven compliance services, local SEO campaigns, and custom web development practices,
                         equips finance, commerce, and IT students with the skills required to thrive in modern accounting and digital technology firms.
                     </p>
                 </div>

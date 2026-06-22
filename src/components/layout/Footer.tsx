@@ -17,7 +17,7 @@ export default function Footer() {
                                     <path d="M2 23L16 30L30 23" stroke="var(--secondary-gss)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
                                 <span style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--white)', letterSpacing: '0.5px', fontFamily: '"Montserrat", sans-serif' }}>
-                                    Zio <span style={{ color: 'var(--secondary-gss)' }}>Enterprises</span>
+                                    GST <span style={{ color: 'var(--secondary-gss)' }}>Suvidha Support</span>
                                 </span>
                             </div>
                         </Link>
@@ -37,7 +37,7 @@ export default function Footer() {
                             </div>
                             <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
                                 <Mail size={16} style={{ color: 'var(--accent-gss)', flexShrink: 0 }} />
-                                <span>ziopvt@zohomail.in</span>
+                                <span>support@gstsuvidhasupport.com</span>
                             </div>
                         </div>
                     </div>
@@ -90,7 +90,7 @@ export default function Footer() {
                 </div>
 
                 <div className={styles.bottomBar}>
-                    <p>&copy; {new Date().getFullYear()} Zio Enterprises. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} GST Suvidha Support. All rights reserved.</p>
                     <div className={styles.bottomLinks}>
                         <Link href="/privacy">Privacy</Link>
                         <span className={styles.separator}>|</span>

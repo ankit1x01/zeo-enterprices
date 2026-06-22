@@ -16,7 +16,7 @@ export default function Compliance() {
                     <div className={styles.content}>
                         <h2 className={styles.heading}>ITR Filing Standards & Compliance</h2>
                         <p className={styles.intro}>
-                            Filing ITR before the due date avoids penalties and keeps your financial records clean. Zio&apos;s CA team ensures timely and accurate compliance:
+                            Filing ITR before the due date avoids penalties and keeps your financial records clean. GST Suvidha Support&apos;s CA team ensures timely and accurate compliance:
                         </p>
 
                         <ul className={styles.list}>

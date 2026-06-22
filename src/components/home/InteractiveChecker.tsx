@@ -97,7 +97,7 @@ export default function InteractiveChecker() {
     const recommendations = getRecommendations();
 
     const getWhatsAppUrl = () => {
-        const text = `Hi Zio Enterprises, I used your Business Compliance Checker.
+        const text = `Hi GST Suvidha Support, I used your Business Compliance Checker.
 Profile: ${profile.toUpperCase()}
 Turnover >20L: ${turnoverOver20L ? 'Yes' : 'No'}
 Interstate: ${interstate ? 'Yes' : 'No'}

@@ -13,8 +13,8 @@ export default function PrivacyPage() {
 
                     <section>
                         <h2>1. Introduction</h2>
-                        <p>Zio Enterprises ("we", "our", "us") is committed to protecting your privacy and personal data. This Privacy Policy explains how we collect, use, store, and protect your information in accordance with applicable data protection regulations.</p>
-                        <p>Zio Enterprises is the data controller responsible for your personal data. If you have any questions about this policy, please contact us at ziopvt@zohomail.in.</p>
+                        <p>GST Suvidha Support ("we", "our", "us") is committed to protecting your privacy and personal data. This Privacy Policy explains how we collect, use, store, and protect your information in accordance with applicable data protection regulations.</p>
+                        <p>GST Suvidha Support is the data controller responsible for your personal data. If you have any questions about this policy, please contact us at support@gstsuvidhasupport.com.</p>
                     </section>
 
                     <section>
@@ -60,7 +60,7 @@ export default function PrivacyPage() {
 
                     <section>
                         <h2>7. Your Data Protection Rights</h2>
-                        <p>You have the right to request access to, rectification of, or erasure of your personal data. To exercise these rights, contact us at ziopvt@zohomail.in.</p>
+                        <p>You have the right to request access to, rectification of, or erasure of your personal data. To exercise these rights, contact us at support@gstsuvidhasupport.com.</p>
                     </section>
 
                     <section>
@@ -77,8 +77,8 @@ export default function PrivacyPage() {
                         <h2>10. Contact Us</h2>
                         <p>If you have questions about this Privacy Policy or wish to exercise your data protection rights:</p>
                         <address>
-                            <strong>Zio Enterprises</strong><br />
-                            Email: ziopvt@zohomail.in<br />
+                            <strong>GST Suvidha Support</strong><br />
+                            Email: support@gstsuvidhasupport.com<br />
                             Location: Aud-234, Siddheshwar Nagar, Kalpi Bridge Colony, Near Morar Police Station, Gwalior - 474007
                         </address>
                     </section>

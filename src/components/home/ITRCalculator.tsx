@@ -130,7 +130,7 @@ export default function ITRCalculator() {
     const { form, desc, docs } = itrForms[incomeType];
 
     const getWhatsAppUrl = () => {
-        const msg = `Hi Zio Enterprises! I used your ITR calculator.
+        const msg = `Hi GST Suvidha Support! I used your ITR calculator.
 Income Type: ${incomeType.toUpperCase()}
 Gross Income: ₹${grossIncome.toLocaleString('en-IN')}
 80C Deductions: ₹${deductions80C.toLocaleString('en-IN')}

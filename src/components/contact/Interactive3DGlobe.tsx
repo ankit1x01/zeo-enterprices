@@ -19,7 +19,7 @@ const CITIES: CityNode[] = [
         lat: 26.2183,
         lng: 78.1828,
         phone: "+91-7828981119",
-        email: "ziopvt@zohomail.in",
+        email: "support@gstsuvidhasupport.com",
         address: "Siddheshwar Nagar, Kalpi Bridge Colony, Near Morar Police Station, Gwalior, MP - 474007"
     },
     {
@@ -27,7 +27,7 @@ const CITIES: CityNode[] = [
         lat: 22.7196,
         lng: 75.8577,
         phone: "+91-7828981119",
-        email: "ziopvt@zohomail.in",
+        email: "support@gstsuvidhasupport.com",
         address: "Vijay Nagar Commercial Hub, Scheme No 54, Indore, MP - 452010"
     },
     {
@@ -35,7 +35,7 @@ const CITIES: CityNode[] = [
         lat: 23.2599,
         lng: 77.4126,
         phone: "+91-8517828981",
-        email: "ziopvt@zohomail.in",
+        email: "support@gstsuvidhasupport.com",
         address: "MP Nagar Zone-II, Near Board Office Square, Bhopal, MP - 462011"
     },
     {
@@ -43,7 +43,7 @@ const CITIES: CityNode[] = [
         lat: 18.5204,
         lng: 73.8567,
         phone: "+91-7828981119",
-        email: "ziopvt@zohomail.in",
+        email: "support@gstsuvidhasupport.com",
         address: "Kharadi IT Park, Off Nagar Road, Pune, MH - 411014"
     },
     {
@@ -51,7 +51,7 @@ const CITIES: CityNode[] = [
         lat: 12.9716,
         lng: 77.5946,
         phone: "+91-8517828981",
-        email: "ziopvt@zohomail.in",
+        email: "support@gstsuvidhasupport.com",
         address: "Outer Ring Road, Kadubeesanahalli, Bangalore, KA - 560103"
     }
 ];

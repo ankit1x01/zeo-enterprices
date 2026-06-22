@@ -18,7 +18,7 @@ export default function AboutPage() {
                             <span>›</span>
                             <span>About Us</span>
                         </div>
-                        <h1 className={styles.heroTitle}>About Zio Enterprises</h1>
+                        <h1 className={styles.heroTitle}>About GST Suvidha Support</h1>
                         <p className={styles.heroSubtitle}>
                             Leading taxation, SEO, GMB local rankings, and custom web development solutions
                         </p>
@@ -35,7 +35,7 @@ export default function AboutPage() {
 
                             <div className={styles.aboutText}>
                                 <p>
-                                    <strong>Zio Enterprises</strong> is a premier professional services firm specialising in taxation compliance, 
+                                    <strong>GST Suvidha Support</strong> is a premier professional services firm specialising in taxation compliance, 
                                     Income Tax Return (ITR) filings, GMB setup, local SEO, website QA audits, and custom web development.
                                 </p>
                                 <p>
@@ -72,7 +72,7 @@ export default function AboutPage() {
             {/* Why Choose Us Section */}
             <section className={styles.whyChooseSection}>
                 <div className="container">
-                    <h2 className={styles.sectionTitle}>Why Choose Zio Enterprises</h2>
+                    <h2 className={styles.sectionTitle}>Why Choose GST Suvidha Support</h2>
                     <div className={styles.whyChooseGrid}>
                         {[
                             { icon: "💼", text: "Chartered Accountants & Web Experts under one roof" },

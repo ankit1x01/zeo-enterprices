@@ -1,9 +1,9 @@
 export const siteConfig = {
-    name: 'Zio Enterprises',
-    shortName: 'Zio Enterprises',
+    name: 'GST Suvidha Support',
+    shortName: 'GST Suvidha Support',
     description: 'Professional taxation, Income Tax Return (ITR) e-filing, GST returns, web design, local SEO, GMB setup, QA audits, and custom software development.',
-    url: 'https://ziopvt.com',
-    ogImage: 'https://ziopvt.com/og-image.png',
+    url: 'https://gstsuvidhasupport.com',
+    ogImage: 'https://gstsuvidhasupport.com/og-image.png',
     keywords: [
         'taxation',
         'ITR filing',
@@ -24,11 +24,11 @@ export const siteConfig = {
         youtube: '#',
     },
     contact: {
-        email: 'ziopvt@zohomail.in',
+        email: 'support@gstsuvidhasupport.com',
         phone: '+91-7828981119',
     },
     company: {
-        legalName: 'Zio Enterprises Pvt Ltd',
+        legalName: 'GST Suvidha Support Pvt Ltd',
         address: 'Indore, Bhopal, Pune, Bangalore, Gwalior',
         foundedYear: 2024,
     },

@@ -1,4 +1,4 @@
-# Zio Enterprises — ITR & IT Consultancy Enhancement Roadmap
+# GST Suvidha Support — ITR & IT Consultancy Enhancement Roadmap
 
 ## Part A: Content & Feature Improvements
 
@@ -347,7 +347,7 @@ export function AnimatedCounter({ target, suffix = "" }: { target: number; suffi
 ### 3D Element 6: Hero Background — India Tax Network Globe (Three.js)
 **Where:** Hero — replace or complement the current particle grid
 
-**Concept:** A low-poly wireframe sphere of India with Zio office cities as glowing nodes. Arcs connect them, showing "Pan-India reach."
+**Concept:** A low-poly wireframe sphere of India with GST Suvidha Support office cities as glowing nodes. Arcs connect them, showing "Pan-India reach."
 
 ```tsx
 // Key Three.js setup sketch:

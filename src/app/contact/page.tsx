@@ -35,7 +35,7 @@ export default function ContactPage() {
                                     <div className={styles.iconBox}><Mail size={24} /></div>
                                     <div>
                                         <h4 className={styles.itemLabel}>Email</h4>
-                                        <a href="mailto:ziopvt@zohomail.in" className={styles.itemLink}>ziopvt@zohomail.in</a>
+                                        <a href="mailto:support@gstsuvidhasupport.com" className={styles.itemLink}>support@gstsuvidhasupport.com</a>
                                     </div>
                                 </div>
 
@@ -59,7 +59,7 @@ export default function ContactPage() {
                             <div className={styles.emergencyBox}>
                                 <h4>Need Immediate Assistance?</h4>
                                 <p>For urgent taxation queries, SEO rankings or web code issues:</p>
-                                <a href="mailto:ziopvt@zohomail.in">ziopvt@zohomail.in</a>
+                                <a href="mailto:support@gstsuvidhasupport.com">support@gstsuvidhasupport.com</a>
                             </div>
                         </div>
 

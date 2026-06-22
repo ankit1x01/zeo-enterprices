@@ -13,21 +13,21 @@ export default function TermsPage() {
 
                     <section>
                         <h2>1. Introduction</h2>
-                        <p>These terms and conditions govern your use of the Zio Enterprises website. By using this website, you accept these terms and conditions in full. If you disagree with any part of these terms, you must not use our website.</p>
+                        <p>These terms and conditions govern your use of the GST Suvidha Support website. By using this website, you accept these terms and conditions in full. If you disagree with any part of these terms, you must not use our website.</p>
                     </section>
 
                     <section>
-                        <h2>2. About Zio Enterprises</h2>
+                        <h2>2. About GST Suvidha Support</h2>
                         <p>
-                            <strong>Company Name:</strong> Zio Enterprises<br />
+                            <strong>Company Name:</strong> GST Suvidha Support<br />
                             <strong>Jurisdiction:</strong> India<br />
-                            <strong>Email:</strong> ziopvt@zohomail.in<br />
+                            <strong>Email:</strong> support@gstsuvidhasupport.com<br />
                         </p>
                     </section>
 
                     <section>
                         <h2>3. License to Use Website</h2>
-                        <p>Unless otherwise stated, Zio Enterprises and/or its licensors own the intellectual property rights in the website and material on the website. You may:</p>
+                        <p>Unless otherwise stated, GST Suvidha Support and/or its licensors own the intellectual property rights in the website and material on the website. You may:</p>
                         <ul>
                             <li>View pages from our website in a web browser</li>
                             <li>Download pages for caching in a web browser</li>
@@ -38,7 +38,7 @@ export default function TermsPage() {
                             <li>Republish material from this website without attribution</li>
                             <li>Sell, rent, or sub-license material from the website</li>
                             <li>Reproduce or duplicate material for commercial purposes</li>
-                            <li>Redistribute content from Zio Enterprises (except as permitted by social sharing)</li>
+                            <li>Redistribute content from GST Suvidha Support (except as permitted by social sharing)</li>
                         </ul>
                     </section>
 
@@ -56,7 +56,7 @@ export default function TermsPage() {
 
                     <section>
                         <h2>5. User-Generated Content</h2>
-                        <p>If you submit any content to our website (through contact forms, comments, or otherwise), you grant Zio Enterprises a worldwide, irrevocable, non-exclusive, royalty-free license to use, reproduce, adapt, publish and distribute such content for business purposes.</p>
+                        <p>If you submit any content to our website (through contact forms, comments, or otherwise), you grant GST Suvidha Support a worldwide, irrevocable, non-exclusive, royalty-free license to use, reproduce, adapt, publish and distribute such content for business purposes.</p>
                         <p>You warrant that any content you submit does not infringe any third-party intellectual property rights and complies with applicable laws.</p>
                     </section>
 
@@ -88,7 +88,7 @@ export default function TermsPage() {
 
                     <section>
                         <h2>10. Indemnity</h2>
-                        <p>You agree to indemnify and hold harmless Zio Enterprises, its directors, employees, and agents from any claims, losses, damages, and expenses (including legal fees) arising from your breach of these terms or misuse of the website.</p>
+                        <p>You agree to indemnify and hold harmless GST Suvidha Support, its directors, employees, and agents from any claims, losses, damages, and expenses (including legal fees) arising from your breach of these terms or misuse of the website.</p>
                     </section>
 
                     <section>
@@ -114,7 +114,7 @@ export default function TermsPage() {
 
                     <section>
                         <h2>14. Entire Agreement</h2>
-                        <p>These terms, together with our Privacy Policy and Cookie Policy, constitute the entire agreement between you and Zio Enterprises relating to your use of this website.</p>
+                        <p>These terms, together with our Privacy Policy and Cookie Policy, constitute the entire agreement between you and GST Suvidha Support relating to your use of this website.</p>
                     </section>
 
                     <section>
@@ -126,8 +126,8 @@ export default function TermsPage() {
                         <h2>16. Contact Information</h2>
                         <p>If you have any questions about these terms:</p>
                         <address>
-                            <strong>Zio Enterprises</strong><br />
-                            Email: ziopvt@zohomail.in<br />
+                            <strong>GST Suvidha Support</strong><br />
+                            Email: support@gstsuvidhasupport.com<br />
                         </address>
                     </section>
                 </div>
