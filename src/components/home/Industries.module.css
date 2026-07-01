@@ -7,7 +7,7 @@
   text-align: center;
   font-size: 2.5rem;
   font-weight: 800;
-  color: var(--black);
+  color: var(--text-primary);
   margin-bottom: 3.5rem;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .iconWrapper {
-  color: var(--primary-blue);
+  color: var(--primary-gss);
   transition: color 0.3s ease;
   display: flex;
   align-items: center;
@@ -42,7 +42,7 @@
 
 .name {
   font-weight: 700;
-  color: var(--black); /* Default text color */
+  color: var(--text-primary); /* Default text color */
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   transition: color 0.3s ease;
@@ -50,18 +50,18 @@
 
 /* Hover Effects */
 .card:hover {
-  background: var(--primary-blue);
-  border-color: var(--primary-blue);
+  background: var(--primary-gss);
+  border-color: var(--primary-gss);
   transform: translateY(-4px);
   box-shadow: var(--shadow-md);
 }
 
 .card:hover .iconWrapper {
-  color: var(--white);
+  color: var(--text-primary);
 }
 
 .card:hover .name {
-  color: var(--white);
+  color: var(--text-primary);
 }
 
 @media (max-width: 600px) {

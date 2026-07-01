@@ -1,9 +1,56 @@
+'use client';
+
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { FileText, Lock, Zap, Check } from 'lucide-react';
+import { gsap } from 'gsap';
 import styles from './Hero.module.css';
 import Interactive3DHero from './Interactive3DHero';
 
 export default function Hero() {
+    useEffect(() => {
+        const triggerEntrance = () => {
+            if (!document.body.classList.contains('loading-active')) {
+                // Staggered slide-up for left content
+                gsap.fromTo('.hero-entrance-item', 
+                    { opacity: 0, y: 35 },
+                    { 
+                        opacity: 1, 
+                        y: 0, 
+                        duration: 1.1, 
+                        stagger: 0.08, 
+                        ease: 'power3.out',
+                        clearProps: 'all' // Clear styles after animation completes
+                    }
+                );
+
+                // Smooth fade and slide-left for right-side visual
+                gsap.fromTo('.hero-entrance-visual',
+                    { opacity: 0, x: 40, scale: 0.95 },
+                    {
+                        opacity: 1,
+                        x: 0,
+                        scale: 1,
+                        duration: 1.4,
+                        ease: 'power4.out',
+                        clearProps: 'all'
+                    }
+                );
+
+                observer.disconnect();
+            }
+        };
+
+        // MutationObserver to watch document.body for class list changes
+        const observer = new MutationObserver(triggerEntrance);
+        observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+
+        // Run immediately if loader has already finished or is not mounted
+        triggerEntrance();
+
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <section className={styles.section}>
             <div className={styles.gridOverlay}></div>
@@ -13,27 +60,27 @@ export default function Hero() {
             <div className={styles.wrapper}>
                 <div className={styles.layout}>
                     {/* Left Content */}
-                    <div className={`${styles.content} animate-fade-in`}>
-                        <div className={styles.badge}>
+                    <div className={styles.content}>
+                        <div className={`${styles.badge} hero-entrance-item`}>
                             <span className={styles.badgeDot}></span>
                             Trusted ITR E-Filing Partner
                         </div>
 
-                        <h1 className={styles.title}>
+                        <h1 className={`${styles.title} hero-entrance-item`}>
                             File Your ITR.<br />
                             <span className={styles.titleHighlight}>Maximize Your Refund.</span>
                         </h1>
 
-                        <p className={styles.subtitle}>
+                        <p className={`${styles.subtitle} hero-entrance-item`}>
                             Expert-assisted Income Tax Return filing for salaried, business, freelancer & NRI taxpayers. Accurate, fast, and 100% online — filed by CAs.
                         </p>
 
-                        <div className={styles.actions}>
-                            <a href="https://wa.me/917828981119?text=Hi,%20I%20want%20to%20file%20my%20ITR%20with%20GST%20Suvidha%20Support." className="btn btn-primary" target="_blank" rel="noopener noreferrer">File My ITR Now</a>
+                        <div className={`${styles.actions} hero-entrance-item`}>
+                            <a href="https://wa.me/919453368173?text=Hi,%20I%20want%20to%20file%20my%20ITR%20with%20GST%20Suvidha%20Support." className="btn btn-primary" target="_blank" rel="noopener noreferrer">File My ITR Now</a>
                             <Link href="/services" className="btn btn-secondary">View Plans</Link>
                         </div>
 
-                        <div className={styles.stats}>
+                        <div className={`${styles.stats} hero-entrance-item`}>
                             <div className={styles.stat}>
                                 <span className={styles.statNum}>50K+</span>
                                 <span className={styles.statLabel}>Returns Filed</span>
@@ -52,7 +99,7 @@ export default function Hero() {
                     </div>
 
                     {/* Right — 3D ITR Dashboard Card */}
-                    <div className={styles.visual}>
+                    <div className={`${styles.visual} hero-entrance-visual`}>
                         <div className={styles.cardScene}>
                             <div className={styles.dashCard}>
                                 <div className={styles.dashHeader}>

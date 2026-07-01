@@ -24,7 +24,7 @@
 .heading {
   font-size: 2.5rem;
   font-weight: 800;
-  color: var(--primary-gss);
+  color: var(--text-primary);
   margin-bottom: 1rem;
 }
 
@@ -61,7 +61,7 @@
 .boxTitle {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--primary-gss);
+  color: var(--text-primary);
   margin-bottom: 1.5rem;
   font-family: "Montserrat", sans-serif;
   border-left: 4px solid var(--secondary-gss);
@@ -106,8 +106,8 @@
 .activeProfile {
   background: var(--primary-gss) !important;
   border-color: var(--primary-gss) !important;
-  color: var(--white) !important;
-  box-shadow: 0 4px 15px rgba(11, 43, 92, 0.2);
+  color: var(--text-primary) !important;
+  box-shadow: 0 4px 15px rgba(234, 179, 8, 0.3);
 }
 
 .optionsList {
@@ -160,7 +160,7 @@
 /* Result Box */
 .resultBox {
   background: var(--primary-gss);
-  color: var(--white);
+  color: var(--text-primary);
   padding: 3rem 2.5rem;
   box-shadow: var(--shadow-xl);
   display: flex;
@@ -185,7 +185,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.12);
   padding-bottom: 1.5rem;
   margin-bottom: 2rem;
 }
@@ -194,7 +194,7 @@
   font-size: 1.35rem;
   font-weight: 800;
   font-family: "Montserrat", sans-serif;
-  color: var(--white);
+  color: var(--text-primary);
 }
 
 .counter {
@@ -215,15 +215,15 @@
 }
 
 .recCard {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(15, 23, 42, 0.1);
   padding: 1.75rem;
   transition: all 0.3s ease;
 }
 
 .recCard:hover {
-  background: rgba(255, 255, 255, 0.07);
-  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.6);
+  border-color: rgba(15, 23, 42, 0.2);
 }
 
 .recHeader {
@@ -237,7 +237,7 @@
 .recName {
   font-size: 1.15rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--text-primary);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -251,7 +251,7 @@
 
 .mandatory {
   background: var(--accent-gss);
-  color: var(--black);
+  color: var(--text-primary);
 }
 
 .recommended {
@@ -267,7 +267,7 @@
 }
 
 .docsSection {
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid rgba(15, 23, 42, 0.1);
   padding-top: 1rem;
 }
 
@@ -275,7 +275,7 @@
   display: block;
   font-size: 0.8rem;
   font-weight: 700;
-  color: var(--accent-gss);
+  color: var(--text-primary);
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
@@ -304,7 +304,7 @@
 
 .actionSection {
   margin-top: 2.5rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(15, 23, 42, 0.12);
   padding-top: 2rem;
 }
 

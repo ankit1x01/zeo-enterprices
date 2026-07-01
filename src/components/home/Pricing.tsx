@@ -27,7 +27,7 @@ const plans = [
         subtitle: "Salaried + Investments",
         price: "999",
         badge: "Most Popular",
-        color: "#e59f1c",
+        color: "#facc15",
         form: "ITR-2",
         turnaround: "36 hours",
         features: [
@@ -127,7 +127,7 @@ export default function Pricing() {
                             </ul>
 
                             <a
-                                href={`https://wa.me/917828981119?text=Hi%2C%20I%20want%20to%20file%20my%20ITR%20under%20the%20${encodeURIComponent(plan.name)}%20plan%20(${encodeURIComponent(plan.form)}).`}
+                                href={`https://wa.me/919453368173?text=Hi%2C%20I%20want%20to%20file%20my%20ITR%20under%20the%20${encodeURIComponent(plan.name)}%20plan%20(${encodeURIComponent(plan.form)}).`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className={styles.ctaBtn}
@@ -141,7 +141,7 @@ export default function Pricing() {
 
                 <p className={styles.note}>
                     All plans include ITR-V acknowledgement & data security. GST @ 18% applicable. Need a custom plan?{' '}
-                    <a href="https://wa.me/917828981119" target="_blank" rel="noopener noreferrer">Chat with us →</a>
+                    <a href="https://wa.me/919453368173" target="_blank" rel="noopener noreferrer">Chat with us →</a>
                 </p>
             </div>
         </section>

@@ -17,7 +17,7 @@
 .content h1 {
   font-size: 2.5rem;
   font-weight: 800;
-  color: var(--black);
+  color: var(--text-primary);
   margin-bottom: 0.5rem;
   font-family: "Montserrat", sans-serif;
 }
@@ -37,7 +37,7 @@
 .content h2 {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--black);
+  color: var(--text-primary);
   margin-bottom: 1rem;
   font-family: "Montserrat", sans-serif;
 }
@@ -45,7 +45,7 @@
 .content h3 {
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--black);
+  color: var(--text-primary);
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
 }
@@ -71,12 +71,12 @@
   font-style: normal;
   background: var(--gray-100);
   padding: 1.5rem;
-  border-left: 4px solid var(--primary-blue);
+  border-left: 4px solid var(--primary-gss);
   margin-top: 1rem;
 }
 
 .content a {
-  color: var(--primary-blue);
+  color: var(--primary-gss-hover);
   text-decoration: underline;
 }
 

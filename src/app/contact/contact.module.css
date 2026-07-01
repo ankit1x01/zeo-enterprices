@@ -1,7 +1,7 @@
 .hero {
   background-color: var(--deep-navy);
   padding: 8rem 0 4rem;
-  color: var(--white);
+  color: var(--text-primary);
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -16,7 +16,7 @@
   height: 100%;
   background: radial-gradient(
     circle at center,
-    rgba(0, 86, 210, 0.15) 0%,
+    rgba(234, 179, 8, 0.12) 0%,
     transparent 70%
   );
   pointer-events: none;
@@ -30,7 +30,7 @@
 
 .heroSubheading {
   font-size: 1.25rem;
-  color: var(--electric-blue);
+  color: var(--secondary-gss);
   font-weight: 600;
 }
 
@@ -55,7 +55,7 @@
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  color: var(--black);
+  color: var(--text-primary);
 }
 
 .infoText {
@@ -83,7 +83,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary-blue);
+  color: var(--primary-gss-hover);
   border-radius: 4px;
 }
 
@@ -99,22 +99,22 @@
 .itemText {
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--black);
+  color: var(--text-primary);
   text-decoration: none;
 }
 
 .itemLink:hover {
-  color: var(--primary-blue);
+  color: var(--primary-gss-hover);
 }
 
 .emergencyBox {
-  background: rgba(2, 17, 37, 0.05); /* Light navy tint */
+  background: rgba(234, 179, 8, 0.08); /* Light yellow tint */
   padding: 2rem;
-  border-left: 4px solid var(--electric-blue);
+  border-left: 4px solid var(--primary-gss);
 }
 
 .emergencyBox h4 {
-  color: var(--deep-navy);
+  color: var(--text-primary);
   margin-bottom: 0.5rem;
 }
 
@@ -125,7 +125,7 @@
 }
 
 .emergencyBox a {
-  color: var(--primary-blue);
+  color: var(--primary-gss-hover);
   font-weight: 700;
   text-decoration: underline;
 }
@@ -152,7 +152,7 @@
 .formGroup label {
   font-weight: 600;
   font-size: 0.95rem;
-  color: var(--black);
+  color: var(--text-primary);
 }
 
 .formGroup input,
@@ -170,13 +170,13 @@
 .formGroup select:focus,
 .formGroup textarea:focus {
   outline: none;
-  border-color: var(--primary-blue);
-  box-shadow: 0 0 0 3px rgba(0, 86, 210, 0.1);
+  border-color: var(--primary-gss);
+  box-shadow: 0 0 0 3px rgba(234, 179, 8, 0.15);
 }
 
 .submitButton {
-  background: var(--primary-blue);
-  color: var(--white);
+  background: var(--primary-gss);
+  color: var(--text-primary);
   padding: 1.25rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -190,7 +190,7 @@
 }
 
 .submitButton:hover {
-  background: var(--secondary-blue); /* Darker blue */
+  background: var(--primary-gss-hover);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }

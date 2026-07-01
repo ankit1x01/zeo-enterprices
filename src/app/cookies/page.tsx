@@ -101,7 +101,7 @@ export default function CookiesPage() {
                         <p>If you have questions about our use of cookies:</p>
                         <address>
                             <strong>GST Suvidha Support</strong><br />
-                            Email: support@gstsuvidhasupport.com<br />
+                            Email: care@gstsuvidhasupport.in<br />
                         </address>
                     </section>
 

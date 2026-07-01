@@ -1,7 +1,15 @@
 import Footer from '@/components/layout/Footer';
 import Navbar from '@/components/layout/Navbar';
+import { Users, Star, MapPin, Clock } from 'lucide-react';
 import Link from 'next/link';
 import styles from './about.module.css';
+
+const stats = [
+    { icon: <Users size={28} />, value: '50,000+', label: 'Returns Filed' },
+    { icon: <Clock size={28} />, value: '48hr', label: 'Avg. Turnaround' },
+    { icon: <Star size={28} />, value: '4.9 / 5', label: 'Client Rating' },
+    { icon: <MapPin size={28} />, value: '5 Cities', label: 'Offices Across India' },
+];
 
 export default function AboutPage() {
     return (
@@ -50,20 +58,15 @@ export default function AboutPage() {
                         </div>
 
                         <div className={styles.aboutCards}>
-                            <div className={styles.aboutImageCard}>
-                                <img src="/team-meeting.png" alt="Our Team" />
-                                <div className={styles.aboutImageCardContent}>
-                                    <h4>Our Team</h4>
+                            {stats.map((stat, i) => (
+                                <div key={i} className={styles.aboutStatCard}>
+                                    <div className={styles.aboutStatIcon}>{stat.icon}</div>
+                                    <div>
+                                        <span className={styles.aboutStatValue}>{stat.value}</span>
+                                        <span className={styles.aboutStatLabel}>{stat.label}</span>
+                                    </div>
                                 </div>
-                                <div className={styles.aboutImageCardArrow}>→</div>
-                            </div>
-                            <div className={styles.aboutImageCard}>
-                                <img src="/india-operations.png" alt="India Operations" />
-                                <div className={styles.aboutImageCardContent}>
-                                    <h4>India Operations</h4>
-                                </div>
-                                <div className={styles.aboutImageCardArrow}>→</div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>

@@ -19,7 +19,7 @@ const steps = [
         title: "CA Reviews & Prepares",
         desc: "Our expert Chartered Accountant reviews all your documents, optimizes deductions, and prepares your ITR draft within 24 hours.",
         items: ["Tax computation sheet", "Deduction maximization", "Draft ITR sent for approval"],
-        color: "#e59f1c"
+        color: "#facc15"
     },
     {
         num: "03",
@@ -104,7 +104,7 @@ export default function HowItWorks() {
 
                 <div className={styles.cta}>
                     <a
-                        href="https://wa.me/917828981119?text=Hi,%20I%20want%20to%20start%20my%20ITR%20filing%20process."
+                        href="https://wa.me/919453368173?text=Hi,%20I%20want%20to%20start%20my%20ITR%20filing%20process."
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-primary"

@@ -82,7 +82,7 @@ export default function RootLayout({
               "name": siteConfig.name,
               "alternateName": siteConfig.shortName,
               "url": siteConfig.url,
-              "logo": `${siteConfig.url}/logo.png`,
+              "logo": `${siteConfig.url}/logo.jpg`,
               "description": siteConfig.description,
               "email": siteConfig.contact.email,
               "address": {

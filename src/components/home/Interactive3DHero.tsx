@@ -53,9 +53,9 @@ export default function Interactive3DHero() {
 
         // Base color mappings
         // Primary GSS teal/emerald: #0d7c5b (R: 13, G: 124, B: 91)
-        // Accent GSS gold: #e59f1c (R: 229, G: 159, B: 28)
+        // Accent GSS light yellow: #facc15 (R: 250, G: 204, B: 21)
         const colorTeal = new THREE.Color("#0d7c5b");
-        const colorGold = new THREE.Color("#e59f1c");
+        const colorGold = new THREE.Color("#facc15");
 
         for (let r = 0; r < rows; r++) {
             for (let c = 0; c < columns; c++) {

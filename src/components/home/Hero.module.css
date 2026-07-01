@@ -32,9 +32,9 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 30% 40%, rgba(13,124,91,0.15) 0%, transparent 55%),
-    radial-gradient(circle at 80% 70%, rgba(11,43,92,0.3) 0%, transparent 55%),
-    linear-gradient(to bottom, rgba(3,13,26,0.9) 0%, rgba(3,13,26,0.6) 100%);
+    radial-gradient(circle at 30% 40%, rgba(13,124,91,0.12) 0%, transparent 55%),
+    radial-gradient(circle at 80% 70%, rgba(250,204,21,0.25) 0%, transparent 55%),
+    linear-gradient(to bottom, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.05) 100%);
   z-index: 2;
 }
 
@@ -93,14 +93,14 @@
   font-size: clamp(2.6rem, 5vw, 3.8rem);
   line-height: 1.1;
   font-weight: 900;
-  color: var(--white);
+  color: var(--text-primary);
   letter-spacing: -1.5px;
   margin-bottom: 1.5rem;
   animation: fadeUp 0.8s ease-out 0.1s both;
 }
 
 .titleHighlight {
-  background: linear-gradient(135deg, var(--accent-gss) 0%, #f4c84a 100%);
+  background: linear-gradient(135deg, var(--secondary-gss) 0%, #159a73 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -108,7 +108,7 @@
 
 .subtitle {
   font-size: 1.1rem;
-  color: rgba(248,250,252,0.75);
+  color: rgba(15,23,42,0.75);
   margin-bottom: 2.5rem;
   line-height: 1.7;
   max-width: 520px;
@@ -144,7 +144,7 @@
 .statNum {
   font-size: 1.8rem;
   font-weight: 900;
-  color: var(--white);
+  color: var(--text-primary);
   font-family: "Montserrat", sans-serif;
   line-height: 1;
 }
@@ -159,7 +159,7 @@
 .statDivider {
   width: 1px;
   height: 40px;
-  background: rgba(255,255,255,0.15);
+  background: rgba(15,23,42,0.15);
 }
 
 /* ── Right Visual ── */
@@ -178,14 +178,14 @@
 }
 
 .dashCard {
-  background: linear-gradient(135deg, rgba(15,25,50,0.95) 0%, rgba(8,20,40,0.98) 100%);
-  border: 1px solid rgba(13,124,91,0.35);
+  background: linear-gradient(135deg, rgba(255,255,255,0.92) 0%, rgba(255,251,235,0.96) 100%);
+  border: 1px solid rgba(13,124,91,0.25);
   border-radius: 20px;
   padding: 1.8rem;
   box-shadow:
-    0 25px 60px rgba(0,0,0,0.6),
-    0 0 0 1px rgba(255,255,255,0.05),
-    inset 0 1px 0 rgba(255,255,255,0.08);
+    0 25px 60px rgba(15,23,42,0.18),
+    0 0 0 1px rgba(15,23,42,0.04),
+    inset 0 1px 0 rgba(255,255,255,0.6);
   backdrop-filter: blur(20px);
   transform: rotateY(-8deg) rotateX(4deg);
   transform-style: preserve-3d;
@@ -206,13 +206,13 @@
 
 .dashIcon {
   font-size: 1.8rem;
-  filter: drop-shadow(0 0 8px rgba(229,159,28,0.5));
+  filter: drop-shadow(0 0 8px rgba(250,204,21,0.5));
 }
 
 .dashTitle {
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--text-primary);
   font-family: "Montserrat", sans-serif;
   margin: 0;
 }
@@ -250,7 +250,7 @@
 
 .dashDivider {
   height: 1px;
-  background: rgba(255,255,255,0.08);
+  background: rgba(15,23,42,0.08);
   margin: 0.8rem 0;
 }
 
@@ -264,7 +264,7 @@
 }
 
 .dashRow strong {
-  color: var(--white);
+  color: var(--text-primary);
   font-weight: 600;
 }
 
@@ -292,7 +292,7 @@
 
 .progressTrack {
   height: 6px;
-  background: rgba(255,255,255,0.08);
+  background: rgba(15,23,42,0.08);
   border-radius: 100px;
   overflow: hidden;
   margin-bottom: 0.5rem;
@@ -316,15 +316,15 @@
 /* ── Floating Chips ── */
 .floatChip {
   position: absolute;
-  background: rgba(15,25,50,0.95);
-  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(15,23,42,0.1);
   border-radius: 100px;
   padding: 0.45rem 1rem;
   font-size: 0.78rem;
   font-weight: 600;
-  color: var(--white);
+  color: var(--text-primary);
   white-space: nowrap;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 24px rgba(15,23,42,0.15);
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -347,8 +347,8 @@
   bottom: 60px;
   left: -40px;
   animation: floatChip2 5s ease-in-out infinite 1s;
-  border-color: rgba(229,159,28,0.4);
-  color: var(--accent-gss);
+  border-color: rgba(202,138,4,0.4);
+  color: var(--primary-gss-hover);
 }
 
 .chip3 {

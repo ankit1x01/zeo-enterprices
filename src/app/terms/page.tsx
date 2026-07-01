@@ -21,7 +21,7 @@ export default function TermsPage() {
                         <p>
                             <strong>Company Name:</strong> GST Suvidha Support<br />
                             <strong>Jurisdiction:</strong> India<br />
-                            <strong>Email:</strong> support@gstsuvidhasupport.com<br />
+                            <strong>Email:</strong> care@gstsuvidhasupport.in<br />
                         </p>
                     </section>
 
@@ -127,7 +127,7 @@ export default function TermsPage() {
                         <p>If you have any questions about these terms:</p>
                         <address>
                             <strong>GST Suvidha Support</strong><br />
-                            Email: support@gstsuvidhasupport.com<br />
+                            Email: care@gstsuvidhasupport.in<br />
                         </address>
                     </section>
                 </div>

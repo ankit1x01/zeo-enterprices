@@ -17,11 +17,11 @@
 
 /* Top Bar Styles */
 .topBar {
-  background: #000000;
+  background: var(--primary-gss);
   padding: 0.6rem 0;
   font-size: 0.75rem;
   font-family: "Montserrat", sans-serif;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
 }
 
 .topBar .container {
@@ -38,7 +38,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--white);
+  color: var(--text-primary);
   font-weight: 700;
   cursor: pointer;
   letter-spacing: 0.5px;
@@ -57,7 +57,7 @@
 .divider {
   width: 1px;
   height: 14px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(15, 23, 42, 0.2);
 }
 
 .auth,
@@ -70,7 +70,7 @@
 
 .signIn,
 .supportLink {
-  color: var(--white);
+  color: var(--text-primary);
   font-weight: 700;
   text-decoration: none;
   transition: color 0.2s ease;
@@ -86,7 +86,7 @@
 .nav {
   padding: 1rem 0; /* Reduced padding slightly to accommodate logo */
   background: var(--deep-navy);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.05);
 }
 
 .logoLink {
@@ -113,7 +113,7 @@
   font-size: 0.85rem;
   font-weight: 600;
   transition: all 0.3s ease;
-  color: var(--white);
+  color: var(--text-primary);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-family: "Montserrat", sans-serif;

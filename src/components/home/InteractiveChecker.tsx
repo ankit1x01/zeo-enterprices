@@ -105,7 +105,7 @@ Employees: ${hasEmployees ? 'Yes' : 'No'}
 Need Subsidy: ${needSubsidy ? 'Yes' : 'No'}
 
 Please assist me in setting up: ${recommendations.map(r => r.name).join(', ')}.`;
-        return `https://wa.me/917828981119?text=${encodeURIComponent(text)}`;
+        return `https://wa.me/919453368173?text=${encodeURIComponent(text)}`;
     };
 
     return (
@@ -259,7 +259,7 @@ Please assist me in setting up: ${recommendations.map(r => r.name).join(', ')}.`
                                 <ArrowRight size={18} />
                             </a>
                             <p className={styles.disclaimer}>
-                                *Instant setup with CA, legal & software experts. Zero hidden fees. Contact us at +91-7828981119.
+                                *Instant setup with CA, legal & software experts. Zero hidden fees. Contact us at +91-9453368173.
                             </p>
                         </div>
                     </div>

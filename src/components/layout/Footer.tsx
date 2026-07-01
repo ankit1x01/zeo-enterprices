@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Footer.module.css';
 
@@ -11,14 +12,7 @@ export default function Footer() {
                     <div className={styles.brand}>
                         <Link href="/" className={styles.logoLink}>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 2L2 9L16 16L30 9L16 2Z" fill="var(--secondary-gss)" />
-                                    <path d="M2 16L16 23L30 16" stroke="var(--accent-gss)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M2 23L16 30L30 23" stroke="var(--secondary-gss)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                                <span style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--white)', letterSpacing: '0.5px', fontFamily: '"Montserrat", sans-serif' }}>
-                                    GST <span style={{ color: 'var(--secondary-gss)' }}>Suvidha Support</span>
-                                </span>
+                                <Image src="/logo.svg" alt="GST Suvidha Support" width={70} height={79} style={{ objectFit: 'contain' }} />
                             </div>
                         </Link>
                         <p className={styles.description}>
@@ -33,11 +27,11 @@ export default function Footer() {
                             </div>
                             <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
                                 <Phone size={16} style={{ color: 'var(--accent-gss)', flexShrink: 0 }} />
-                                <span>+91-7828981119, +91-8517828981</span>
+                                <span>+91-9453368173</span>
                             </div>
                             <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
                                 <Mail size={16} style={{ color: 'var(--accent-gss)', flexShrink: 0 }} />
-                                <span>support@gstsuvidhasupport.com</span>
+                                <span>care@gstsuvidhasupport.in</span>
                             </div>
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 .section {
   padding: 6rem 0;
   background-color: var(--primary-gss);
-  color: var(--white);
+  color: var(--text-primary);
   overflow: hidden;
 }
 
@@ -33,7 +33,7 @@
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 1.5rem;
-  color: var(--white);
+  color: var(--text-primary);
 }
 
 .description {
@@ -61,7 +61,7 @@
   font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: var(--accent-gss);
+  color: var(--secondary-gss);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .checkIcon {
-  color: var(--accent-gss);
+  color: var(--secondary-gss);
   flex-shrink: 0;
   margin-top: 2px;
 }
@@ -95,7 +95,7 @@
   justify-content: center;
   gap: 0.75rem;
   background: var(--white);
-  color: var(--primary-gss);
+  color: var(--text-primary);
   padding: 1.2rem 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -165,7 +165,7 @@
   width: 40px;
   height: 40px;
   background: var(--white);
-  color: var(--primary-gss);
+  color: var(--text-primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,7 +177,7 @@
 
 .imageCard:hover .cardArrow {
   transform: translateX(5px);
-  background: var(--accent-gss);
+  background: var(--secondary-gss);
   color: var(--white);
 }
 

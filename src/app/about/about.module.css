@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   background: var(--black);
+  color: var(--text-primary);
   padding: 8rem 0 4rem;
   overflow: hidden;
 }
@@ -29,8 +30,8 @@
   bottom: 0;
   background: linear-gradient(
     135deg,
-    rgba(11, 11, 11, 0.9) 0%,
-    rgba(11, 11, 11, 0.8) 100%
+    rgba(255, 243, 196, 0.92) 0%,
+    rgba(255, 243, 196, 0.85) 100%
   );
   z-index: 1;
 }
@@ -47,36 +48,36 @@
   gap: 0.5rem;
   margin-bottom: 2rem;
   font-size: 0.85rem;
-  color: var(--text-light-muted);
+  color: var(--text-secondary);
 }
 
 .breadcrumb a {
-  color: var(--text-light-muted);
+  color: var(--text-secondary);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
 .breadcrumb a:hover {
-  color: var(--yellow);
+  color: var(--primary-gss-hover);
 }
 
 .breadcrumb span:last-child {
   text-decoration: underline;
   text-underline-offset: 3px;
-  color: var(--white);
+  color: var(--text-primary);
 }
 
 .heroTitle {
   font-size: 3.5rem;
   font-weight: 800;
-  color: var(--white);
+  color: var(--text-primary);
   margin-bottom: 1rem;
   letter-spacing: -1px;
 }
 
 .heroSubtitle {
   font-size: 1.25rem;
-  color: var(--yellow);
+  color: var(--primary-gss-hover);
   font-style: italic;
 }
 
@@ -84,7 +85,7 @@
 .sectionTitle {
   font-size: 2.5rem;
   font-weight: 800;
-  color: var(--black);
+  color: var(--text-primary);
   line-height: 1.15;
   margin-bottom: 2rem;
   letter-spacing: -0.5px;
@@ -117,74 +118,58 @@
 }
 
 .aboutText strong {
-  color: var(--black);
+  color: var(--text-primary);
   font-weight: 600;
 }
 
 .aboutCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.aboutStatCard {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 1rem;
+  background: var(--off-white);
+  border: 1px solid var(--gray-200);
+  padding: 1.75rem 1.5rem;
+  transition: all 0.3s ease;
 }
 
-.aboutImageCard {
-  position: relative;
-  height: 200px;
-  overflow: hidden;
-  cursor: pointer;
-  border-radius: 2px;
+.aboutStatCard:hover {
+  background: var(--white);
+  box-shadow: var(--shadow-md);
+  border-color: var(--secondary-gss);
+  transform: translateY(-4px);
 }
 
-.aboutImageCard img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.aboutImageCard:hover img {
-  transform: scale(1.08);
-}
-
-.aboutImageCardContent {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 2rem;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0.5) 50%,
-    transparent 100%
-  );
-}
-
-.aboutImageCardContent h4 {
-  color: var(--white);
-  font-size: 1.1rem;
-  font-weight: 700;
-}
-
-.aboutImageCardArrow {
-  position: absolute;
-  bottom: 1.25rem;
-  right: 1.25rem;
-  width: 45px;
-  height: 45px;
-  background: var(--yellow);
+.aboutStatIcon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--emerald-glow);
+  color: var(--secondary-gss);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--black);
-  font-size: 1.3rem;
-  font-weight: 700;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px var(--yellow-glow);
+  flex-shrink: 0;
 }
 
-.aboutImageCard:hover .aboutImageCardArrow {
-  transform: translateX(5px);
+.aboutStatValue {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  font-family: "Montserrat", sans-serif;
+}
+
+.aboutStatLabel {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
 }
 
 .whyChooseSection {
@@ -249,7 +234,7 @@
 .whyChooseText {
   margin: 0;
   font-weight: 600;
-  color: var(--black);
+  color: var(--text-primary);
   line-height: 1.6;
   font-size: 1.05rem;
 }
@@ -257,11 +242,11 @@
 .complianceSection {
   background: var(--black);
   padding: 7rem 0;
-  color: var(--white);
+  color: var(--text-primary);
 }
 
 .complianceSection .sectionTitle {
-  color: var(--white);
+  color: var(--text-primary);
 }
 
 .complianceWrapper {
@@ -293,7 +278,7 @@
 }
 
 .complianceCheck {
-  color: var(--yellow);
+  color: var(--secondary-gss);
   font-weight: bold;
   font-size: 1.25rem;
 }
@@ -305,20 +290,20 @@
 }
 
 .complianceBadge {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(15, 23, 42, 0.04);
+  border: 1px solid rgba(15, 23, 42, 0.12);
   padding: 2.5rem 2rem;
   text-align: center;
   font-weight: 800;
   font-size: 1.2rem;
-  color: var(--yellow);
+  color: var(--secondary-gss);
   letter-spacing: 1.5px;
   transition: all 0.4s ease;
 }
 
 .complianceBadge:hover {
-  background: rgba(255, 210, 0, 0.1);
-  border-color: var(--yellow);
+  background: rgba(13, 124, 91, 0.08);
+  border-color: var(--secondary-gss);
   transform: translateY(-5px);
 }
 
@@ -361,7 +346,7 @@
 
 .industryName {
   font-weight: 700;
-  color: var(--black);
+  color: var(--text-primary);
   font-size: 1rem;
 }
 

@@ -54,7 +54,7 @@
 }
 
 .socialIcon {
-  color: var(--white);
+  color: var(--text-primary);
   opacity: 0.7;
   transition: all 0.3s ease;
   display: flex;
@@ -62,7 +62,7 @@
   justify-content: center;
   width: 36px;
   height: 36px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(15, 23, 42, 0.05);
   border-radius: 50%;
 }
 
@@ -106,7 +106,7 @@
 }
 
 .links a:hover {
-  color: var(--white);
+  color: var(--text-primary);
   text-decoration: underline;
   text-decoration-color: var(--secondary-gss);
   transform: translateX(3px);
@@ -121,7 +121,7 @@
 /* Bottom Bar */
 .bottomBar {
   padding-top: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(15, 23, 42, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -35,7 +35,7 @@ export default function ContactPage() {
                                     <div className={styles.iconBox}><Mail size={24} /></div>
                                     <div>
                                         <h4 className={styles.itemLabel}>Email</h4>
-                                        <a href="mailto:support@gstsuvidhasupport.com" className={styles.itemLink}>support@gstsuvidhasupport.com</a>
+                                        <a href="mailto:care@gstsuvidhasupport.in" className={styles.itemLink}>care@gstsuvidhasupport.in</a>
                                     </div>
                                 </div>
 
@@ -43,7 +43,7 @@ export default function ContactPage() {
                                     <div className={styles.iconBox}><Phone size={24} /></div>
                                     <div>
                                         <h4 className={styles.itemLabel}>Phone</h4>
-                                        <a href="tel:+917828981119" className={styles.itemLink}>+91-7828981119, +91-8517828981</a>
+                                        <a href="tel:+919453368173" className={styles.itemLink}>+91-9453368173</a>
                                     </div>
                                 </div>
 
@@ -59,7 +59,7 @@ export default function ContactPage() {
                             <div className={styles.emergencyBox}>
                                 <h4>Need Immediate Assistance?</h4>
                                 <p>For urgent taxation queries, SEO rankings or web code issues:</p>
-                                <a href="mailto:support@gstsuvidhasupport.com">support@gstsuvidhasupport.com</a>
+                                <a href="mailto:care@gstsuvidhasupport.in">care@gstsuvidhasupport.in</a>
                             </div>
                         </div>
 

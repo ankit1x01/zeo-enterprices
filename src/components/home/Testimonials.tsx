@@ -20,7 +20,7 @@ const testimonials = [
         rating: 5,
         text: "Had mutual fund redemptions and was confused about which form to use. GST Suvidha Support's CA sorted it out in one call, computed LTCG correctly, and filed everything same day. Highly recommend!",
         initials: "RV",
-        color: "#e59f1c",
+        color: "#facc15",
     },
     {
         name: "Anjali Patel",
@@ -68,7 +68,7 @@ function StarRating({ count }: { count: number }) {
     return (
         <div className={styles.stars}>
             {Array.from({ length: count }).map((_, i) => (
-                <Star key={i} size={14} fill="#e59f1c" stroke="none" />
+                <Star key={i} size={14} fill="#facc15" stroke="none" />
             ))}
         </div>
     );
@@ -84,7 +84,7 @@ export default function Testimonials() {
                     <div className={styles.aggregate}>
                         <div className={styles.aggStars}>
                             {Array.from({ length: 5 }).map((_, i) => (
-                                <Star key={i} size={20} fill="#e59f1c" stroke="none" />
+                                <Star key={i} size={20} fill="#facc15" stroke="none" />
                             ))}
                         </div>
                         <span className={styles.aggScore}>4.9 / 5</span>

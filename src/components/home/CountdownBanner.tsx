@@ -42,7 +42,7 @@ export default function CountdownBanner() {
                     ITR filing deadline has passed. File a <strong>Belated Return</strong> to avoid ₹5,000 penalty.
                 </span>
                 <a
-                    href="https://wa.me/917828981119?text=Hi%2C%20I%20missed%20the%20ITR%20deadline.%20Please%20help%20me%20file%20a%20belated%20return."
+                    href="https://wa.me/919453368173?text=Hi%2C%20I%20missed%20the%20ITR%20deadline.%20Please%20help%20me%20file%20a%20belated%20return."
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles.bannerCta}
@@ -81,7 +81,7 @@ export default function CountdownBanner() {
                 </div>
             </div>
             <a
-                href="https://wa.me/917828981119?text=Hi%2C%20I%20want%20to%20file%20my%20ITR%20before%20the%20July%2031%20deadline."
+                href="https://wa.me/919453368173?text=Hi%2C%20I%20want%20to%20file%20my%20ITR%20before%20the%20July%2031%20deadline."
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.bannerCta}

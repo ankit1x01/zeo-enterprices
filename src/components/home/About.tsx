@@ -1,6 +1,13 @@
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Users, Star, MapPin, Clock } from 'lucide-react';
 import Link from 'next/link';
 import styles from './About.module.css';
+
+const stats = [
+    { icon: <Users size={26} />, value: '50,000+', label: 'Taxpayers Served' },
+    { icon: <Star size={26} />, value: '4.9 / 5', label: 'Client Rating' },
+    { icon: <MapPin size={26} />, value: '5 Cities', label: 'Pan-India Presence' },
+    { icon: <Clock size={26} />, value: '48hr', label: 'Avg. Turnaround' },
+];
 
 export default function About() {
     return (
@@ -28,25 +35,15 @@ export default function About() {
                         </Link>
                     </div>
 
-                    {/* Image Cards Column */}
-                    <div className={styles.images}>
-                        {/* Card 1 */}
-                        <div className={styles.imageCard}>
-                            <img src="/team-meeting.png" alt="Our Experts" />
-                            <div className={styles.imageOverlay}>
-                                <h3>Our Experts</h3>
-                                <div className={styles.arrowBox}>→</div>
+                    {/* Stats Column */}
+                    <div className={styles.statsGrid}>
+                        {stats.map((stat, i) => (
+                            <div key={i} className={styles.statCard}>
+                                <div className={styles.statIcon}>{stat.icon}</div>
+                                <span className={styles.statValue}>{stat.value}</span>
+                                <span className={styles.statLabel}>{stat.label}</span>
                             </div>
-                        </div>
-
-                        {/* Card 2 */}
-                        <div className={styles.imageCard}>
-                            <img src="/india-operations.png" alt="Pan-India Tax & IT Services" />
-                            <div className={styles.imageOverlay}>
-                                <h3>Pan-India Services</h3>
-                                <div className={styles.arrowBox}>→</div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>

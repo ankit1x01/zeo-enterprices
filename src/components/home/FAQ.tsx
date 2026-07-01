@@ -68,7 +68,7 @@ export default function FAQ() {
                             Can&apos;t find what you&apos;re looking for? Our CA team answers queries within the hour on WhatsApp.
                         </p>
                         <a
-                            href="https://wa.me/917828981119?text=Hi%2C%20I%20have%20a%20question%20about%20ITR%20filing."
+                            href="https://wa.me/919453368173?text=Hi%2C%20I%20have%20a%20question%20about%20ITR%20filing."
                             target="_blank"
                             rel="noopener noreferrer"
                             className={styles.waBtn}

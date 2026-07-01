@@ -1,21 +1,21 @@
 import Footer from '@/components/layout/Footer';
 import Navbar from '@/components/layout/Navbar';
-import { 
-    Building2, 
-    Receipt, 
-    Briefcase, 
-    Landmark, 
-    Globe, 
-    ShieldCheck, 
-    FileText, 
-    ChevronRight,
+import {
+    Building2,
+    Receipt,
+    Briefcase,
+    Landmark,
+    Globe,
+    FileText,
     MessageSquare
 } from 'lucide-react';
+import ServicesExplorer from './ServicesExplorer';
 import styles from './services.module.css';
 
 export default function ServicesPage() {
     const categories = [
         {
+            id: "direct-tax",
             title: "Income Tax & ITR Filing",
             icon: <Briefcase size={32} />,
             items: [
@@ -29,6 +29,7 @@ export default function ServicesPage() {
             ]
         },
         {
+            id: "gst-compliance",
             title: "GST Compliance & Setup",
             icon: <Receipt size={32} />,
             items: [
@@ -41,6 +42,7 @@ export default function ServicesPage() {
             ]
         },
         {
+            id: "company-registration",
             title: "Company & Gov Registration",
             icon: <Building2 size={32} />,
             items: [
@@ -54,6 +56,7 @@ export default function ServicesPage() {
             ]
         },
         {
+            id: "it-development",
             title: "Website Design & Development",
             icon: <Globe size={32} />,
             items: [
@@ -66,6 +69,8 @@ export default function ServicesPage() {
             ]
         },
         {
+            id: "gmb-seo",
+            extraAnchorId: "digital-marketing",
             title: "Google My Business & SEO",
             icon: <Landmark size={32} />,
             items: [
@@ -78,6 +83,8 @@ export default function ServicesPage() {
             ]
         },
         {
+            id: "qa-audits",
+            extraAnchorId: "whatsapp-marketing",
             title: "QA Audits & WhatsApp Campaigns",
             icon: <FileText size={32} />,
             items: [
@@ -109,38 +116,20 @@ export default function ServicesPage() {
             {/* Content Section */}
             <section className={styles.content}>
                 <div className="container">
-                    {categories.map((cat, index) => (
-                        <div key={index} id={cat.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')} className={styles.categorySection}>
-                            <div className={styles.categoryHeader}>
-                                <div className={styles.categoryIcon}>
-                                    {cat.icon}
-                                </div>
-                                <h2 className={styles.categoryTitle}>{cat.title}</h2>
-                            </div>
-
-                            <div className={styles.serviceGrid}>
-                                {cat.items.map((item, i) => (
-                                    <div key={i} className={styles.serviceItem}>
-                                        <ChevronRight size={20} className={styles.itemIcon} />
-                                        <span className={styles.itemText}>{item}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-                    ))}
+                    <ServicesExplorer categories={categories} />
 
                     {/* WhatsApp Support CTA Card */}
                     <div className={styles.ctaCard}>
                         <h2>Need Assistance with Registration or Filings?</h2>
                         <p>Speak to our representative directly for instant quotes and documents requirements checklists.</p>
                         <a 
-                            href="https://wa.me/917828981119?text=Hi,%20I'm%20interested%20in%20your%20taxation%20and%20compliance%20services." 
+                            href="https://wa.me/919453368173?text=Hi,%20I'm%20interested%20in%20your%20taxation%20and%20compliance%20services." 
                             target="_blank" 
                             rel="noopener noreferrer"
                             className={styles.ctaButton}
                         >
                             <MessageSquare size={20} />
-                            <span>Chat on WhatsApp (+91-7828981119)</span>
+                            <span>Chat on WhatsApp (+91-9453368173)</span>
                         </a>
                     </div>
                 </div>

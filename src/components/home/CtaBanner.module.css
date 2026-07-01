@@ -1,7 +1,7 @@
 .section {
   background-color: var(--primary-gss);
   padding: 5rem 0;
-  color: var(--white);
+  color: var(--text-primary);
 }
 
 .wrapper {
@@ -23,7 +23,7 @@
   font-weight: 800;
   margin-bottom: 1rem;
   line-height: 1.2;
-  color: var(--white);
+  color: var(--text-primary);
 }
 
 .text {
@@ -42,7 +42,7 @@
   align-items: center;
   gap: 0.75rem;
   background-color: var(--white);
-  color: var(--deep-navy); /* Dark text on white button */
+  color: var(--text-primary); /* Dark text on white button */
   padding: 1.25rem 2rem;
   font-weight: 700;
   font-size: 1rem;

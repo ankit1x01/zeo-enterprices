@@ -1,7 +1,7 @@
 .hero {
   background-color: var(--deep-navy);
   padding: 8rem 0 4rem;
-  color: var(--white);
+  color: var(--text-primary);
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -47,9 +47,16 @@
 }
 
 .categorySection {
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
   background: var(--white);
   border-radius: 8px; /* Clean look */
+  scroll-margin-top: 200px;
+  position: relative;
+}
+
+.anchorSpacer {
+  position: absolute;
+  top: -200px;
 }
 
 /* Alternate background for visual separation if needed, but keeping it white for now */
@@ -58,9 +65,152 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  margin-bottom: 2.5rem;
+  width: 100%;
+  margin-bottom: 2rem;
   padding-bottom: 1.5rem;
   border-bottom: 2px solid var(--gray-100);
+  background: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+
+.categoryCount {
+  background: var(--off-white);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+  border-radius: 100px;
+}
+
+.categoryChevron {
+  color: var(--text-muted);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.categoryChevronOpen {
+  transform: rotate(180deg);
+}
+
+/* Quick Nav */
+.quickNav {
+  position: sticky;
+  top: 130px;
+  z-index: 50;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray-200);
+  padding: 0.85rem 0;
+  margin-bottom: 2.5rem;
+}
+
+.quickNavInner {
+  display: flex;
+  gap: 0.6rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.quickNavInner::-webkit-scrollbar {
+  display: none;
+}
+
+.quickNavPill {
+  flex-shrink: 0;
+  padding: 0.55rem 1.1rem;
+  border-radius: 100px;
+  border: 1px solid var(--gray-200);
+  background: var(--off-white);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.quickNavPill:hover {
+  border-color: var(--secondary-gss);
+  color: var(--secondary-gss);
+}
+
+.quickNavPillActive {
+  background: var(--secondary-gss);
+  border-color: var(--secondary-gss);
+  color: var(--white);
+}
+
+/* Search */
+.searchWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 1.1rem;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 1rem 3rem;
+  border: 1px solid var(--gray-200);
+  background: var(--off-white);
+  font-size: 1rem;
+  color: var(--text-primary);
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--secondary-gss);
+  background: var(--white);
+  box-shadow: 0 0 0 3px rgba(13, 124, 91, 0.12);
+}
+
+.searchClear {
+  position: absolute;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+}
+
+.searchClear:hover {
+  color: var(--text-primary);
+}
+
+.searchResultCount {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.noResults {
+  background: var(--off-white);
+  border: 1px dashed var(--gray-200);
+  padding: 2.5rem;
+  text-align: center;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+}
+
+.noResults a {
+  color: var(--secondary-gss);
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 .categoryIcon {
@@ -78,7 +228,7 @@
 .categoryTitle {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--black);
+  color: var(--text-primary);
 }
 
 .serviceGrid {
@@ -117,7 +267,7 @@
 
 .ctaCard {
   background-color: var(--primary-gss);
-  color: var(--white);
+  color: var(--text-primary);
   padding: 3.5rem 3rem;
   text-align: center;
   display: flex;

@@ -24,8 +24,8 @@ export const siteConfig = {
         youtube: '#',
     },
     contact: {
-        email: 'support@gstsuvidhasupport.com',
-        phone: '+91-7828981119',
+        email: 'care@gstsuvidhasupport.in',
+        phone: '+91-9453368173',
     },
     company: {
         legalName: 'GST Suvidha Support Pvt Ltd',

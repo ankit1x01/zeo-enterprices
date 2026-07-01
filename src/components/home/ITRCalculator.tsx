@@ -75,12 +75,12 @@ function TaxGauge({ savedPercent }: { savedPercent: number }) {
     const r = 44;
     const circ = 2 * Math.PI * r;
     const offset = circ - (Math.min(savedPercent, 100) / 100) * circ;
-    const gaugeColor = savedPercent > 60 ? '#4ade80' : savedPercent > 30 ? '#e59f1c' : '#f87171';
+    const gaugeColor = savedPercent > 60 ? '#4ade80' : savedPercent > 30 ? '#facc15' : '#f87171';
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.4rem' }}>
             <svg width="110" height="110" viewBox="0 0 100 100" style={{ overflow: 'visible' }}>
-                <circle cx="50" cy="50" r={r} fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="9" />
+                <circle cx="50" cy="50" r={r} fill="none" stroke="rgba(15,23,42,0.08)" strokeWidth="9" />
                 <circle
                     cx="50" cy="50" r={r} fill="none"
                     stroke={gaugeColor}
@@ -94,14 +94,14 @@ function TaxGauge({ savedPercent }: { savedPercent: number }) {
                         filter: `drop-shadow(0 0 6px ${gaugeColor})`
                     }}
                 />
-                <text x="50" y="47" textAnchor="middle" fill="white" fontSize="18" fontWeight="900" fontFamily="Montserrat, sans-serif">
+                <text x="50" y="47" textAnchor="middle" fill="#0f172a" fontSize="18" fontWeight="900" fontFamily="Montserrat, sans-serif">
                     {Math.round(Math.min(savedPercent, 100))}%
                 </text>
-                <text x="50" y="62" textAnchor="middle" fill="#94a3b8" fontSize="8" letterSpacing="0.5">
+                <text x="50" y="62" textAnchor="middle" fill="#52525b" fontSize="8" letterSpacing="0.5">
                     TAX SAVED
                 </text>
             </svg>
-            <span style={{ fontSize: '0.72rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.5px', textAlign: 'center' }}>
+            <span style={{ fontSize: '0.72rem', color: '#52525b', textTransform: 'uppercase', letterSpacing: '0.5px', textAlign: 'center' }}>
                 vs. no planning
             </span>
         </div>
@@ -140,7 +140,7 @@ Estimated ${refundOrPayable >= 0 ? 'Refund' : 'Payable'}: ₹${Math.abs(Math.rou
 Recommended Form: ${form}
 
 Please help me file my ITR.`;
-        return `https://wa.me/917828981119?text=${encodeURIComponent(msg)}`;
+        return `https://wa.me/919453368173?text=${encodeURIComponent(msg)}`;
     };
 
     const fmt = (n: number) => `₹${Math.abs(Math.round(n)).toLocaleString('en-IN')}`;

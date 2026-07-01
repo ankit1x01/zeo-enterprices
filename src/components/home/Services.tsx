@@ -19,7 +19,7 @@ export default function Services() {
             title: "Business & Freelancer ITR",
             description: "ITR-3 for business/profession income and ITR-4 (Sugam) for presumptive income under Sections 44AD, 44ADA. Includes bookkeeping support.",
             link: "/services#business-itr",
-            color: "#e59f1c"
+            color: "#facc15"
         },
         {
             icon: <Building2 size={32} />,

@@ -13,10 +13,12 @@ import CountdownBanner from '@/components/home/CountdownBanner';
 import StatsStrip from '@/components/home/StatsStrip';
 import Footer from '@/components/layout/Footer';
 import Navbar from '@/components/layout/Navbar';
+import LoaderWrapper from '@/components/loader/LoaderWrapper';
 
 export default function Home() {
   return (
     <main>
+      <LoaderWrapper />
       <Navbar />
       <CountdownBanner />
       <Hero />

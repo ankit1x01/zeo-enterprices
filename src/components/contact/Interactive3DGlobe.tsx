@@ -18,40 +18,40 @@ const CITIES: CityNode[] = [
         name: "Gwalior (Main Office)",
         lat: 26.2183,
         lng: 78.1828,
-        phone: "+91-7828981119",
-        email: "support@gstsuvidhasupport.com",
+        phone: "+91-9453368173",
+        email: "care@gstsuvidhasupport.in",
         address: "Siddheshwar Nagar, Kalpi Bridge Colony, Near Morar Police Station, Gwalior, MP - 474007"
     },
     {
         name: "Indore",
         lat: 22.7196,
         lng: 75.8577,
-        phone: "+91-7828981119",
-        email: "support@gstsuvidhasupport.com",
+        phone: "+91-9453368173",
+        email: "care@gstsuvidhasupport.in",
         address: "Vijay Nagar Commercial Hub, Scheme No 54, Indore, MP - 452010"
     },
     {
         name: "Bhopal",
         lat: 23.2599,
         lng: 77.4126,
-        phone: "+91-8517828981",
-        email: "support@gstsuvidhasupport.com",
+        phone: "+91-9453368173",
+        email: "care@gstsuvidhasupport.in",
         address: "MP Nagar Zone-II, Near Board Office Square, Bhopal, MP - 462011"
     },
     {
         name: "Pune",
         lat: 18.5204,
         lng: 73.8567,
-        phone: "+91-7828981119",
-        email: "support@gstsuvidhasupport.com",
+        phone: "+91-9453368173",
+        email: "care@gstsuvidhasupport.in",
         address: "Kharadi IT Park, Off Nagar Road, Pune, MH - 411014"
     },
     {
         name: "Bangalore",
         lat: 12.9716,
         lng: 77.5946,
-        phone: "+91-8517828981",
-        email: "support@gstsuvidhasupport.com",
+        phone: "+91-9453368173",
+        email: "care@gstsuvidhasupport.in",
         address: "Outer Ring Road, Kadubeesanahalli, Bangalore, KA - 560103"
     }
 ];
@@ -98,10 +98,10 @@ export default function Interactive3DGlobe() {
         
         // Minimalist tech grid texture using wireframe
         const sphereMat = new THREE.MeshBasicMaterial({
-            color: 0x052e22, // Very subtle deep dark emerald green
+            color: 0x0d7c5b, // Emerald wireframe, readable on light backdrop
             wireframe: true,
             transparent: true,
-            opacity: 0.15,
+            opacity: 0.25,
         });
         const globeMesh = new THREE.Mesh(sphereGeo, sphereMat);
         globeGroup.add(globeMesh);
@@ -145,7 +145,7 @@ export default function Interactive3DGlobe() {
                     size / 2,
                     size / 2
                 );
-                gradient.addColorStop(0, "rgba(229, 159, 28, 1)"); // Gold
+                gradient.addColorStop(0, "rgba(202, 138, 4, 1)"); // Darkened gold for contrast on light backdrop
                 gradient.addColorStop(0.3, "rgba(13, 124, 91, 0.8)"); // Emerald
                 gradient.addColorStop(0.7, "rgba(13, 124, 91, 0.15)");
                 gradient.addColorStop(1, "rgba(13, 124, 91, 0)");
@@ -159,7 +159,7 @@ export default function Interactive3DGlobe() {
             size: 7,
             map: createPinTexture(),
             transparent: true,
-            blending: THREE.AdditiveBlending,
+            blending: THREE.NormalBlending,
             depthWrite: false,
         });
 
@@ -175,7 +175,7 @@ export default function Interactive3DGlobe() {
             // Add an interactive pulsing wave ring at coordinates
             const ringGeo = new THREE.RingGeometry(0.5, 3.5, 30);
             const ringMat = new THREE.MeshBasicMaterial({
-                color: 0xe59f1c, // Gold
+                color: 0xca8a04, // Gold, darkened for a light backdrop
                 side: THREE.DoubleSide,
                 transparent: true,
                 opacity: 0.8,
@@ -193,10 +193,10 @@ export default function Interactive3DGlobe() {
 
         // Draw Arcs connecting the network (curves between coordinates)
         const curveMaterial = new THREE.LineBasicMaterial({
-            color: 0xe59f1c, // Gold connecting lines
+            color: 0xca8a04, // Gold connecting lines, darkened for a light backdrop
             transparent: true,
-            opacity: 0.35,
-            blending: THREE.AdditiveBlending,
+            opacity: 0.5,
+            blending: THREE.NormalBlending,
         });
 
         for (let i = 0; i < CITIES.length; i++) {
@@ -401,8 +401,8 @@ export default function Interactive3DGlobe() {
             gap: "2.5rem",
             background: "var(--deep-navy)",
             padding: "2.5rem",
-            color: "var(--white)",
-            border: "1px solid rgba(255,255,255,0.08)",
+            color: "var(--text-primary)",
+            border: "1px solid rgba(15,23,42,0.08)",
             boxShadow: "var(--shadow-xl)",
             position: "relative",
             overflow: "hidden"
@@ -429,6 +429,7 @@ export default function Interactive3DGlobe() {
                     textTransform: "uppercase",
                     letterSpacing: "1px",
                     fontWeight: 700,
+                    color: "var(--white)",
                     zIndex: 10
                 }}>
                     3D Interactive GMB Map
@@ -457,12 +458,12 @@ export default function Interactive3DGlobe() {
             {/* Right Column: Interactive Details Panel */}
             <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", zIndex: 2 }}>
                 <div>
-                    <h3 style={{ 
-                        fontFamily: "Montserrat, sans-serif", 
-                        fontSize: "1.4rem", 
-                        fontWeight: 800, 
+                    <h3 style={{
+                        fontFamily: "Montserrat, sans-serif",
+                        fontSize: "1.4rem",
+                        fontWeight: 800,
                         marginBottom: "1.5rem",
-                        color: "var(--accent-gss)"
+                        color: "var(--primary-gss-hover)"
                     }}>
                         Our Office Network
                     </h3>
@@ -475,9 +476,9 @@ export default function Interactive3DGlobe() {
                                 onClick={() => handleCitySelect(city)}
                                 style={{
                                     padding: "8px 14px",
-                                    background: activeCity.name === city.name ? "var(--secondary-gss)" : "rgba(255, 255, 255, 0.05)",
-                                    border: activeCity.name === city.name ? "1px solid var(--secondary-gss)" : "1px solid rgba(255, 255, 255, 0.1)",
-                                    color: "var(--white)",
+                                    background: activeCity.name === city.name ? "var(--secondary-gss)" : "rgba(15, 23, 42, 0.05)",
+                                    border: activeCity.name === city.name ? "1px solid var(--secondary-gss)" : "1px solid rgba(15, 23, 42, 0.12)",
+                                    color: activeCity.name === city.name ? "var(--white)" : "var(--text-primary)",
                                     cursor: "pointer",
                                     fontSize: "0.85rem",
                                     fontWeight: 700,
@@ -492,15 +493,15 @@ export default function Interactive3DGlobe() {
 
                     {/* Active City Card */}
                     <div style={{
-                        background: "rgba(255, 255, 255, 0.03)",
-                        borderLeft: "4px solid var(--accent-gss)",
+                        background: "rgba(255, 255, 255, 0.5)",
+                        borderLeft: "4px solid var(--primary-gss-hover)",
                         padding: "1.5rem",
                         display: "flex",
                         flexDirection: "column",
                         gap: "1.25rem"
                     }}>
-                        <h4 style={{ fontSize: "1.15rem", fontWeight: 700, color: "var(--white)", display: "flex", alignItems: "center", gap: "8px" }}>
-                            <Building2 size={20} style={{ color: "var(--accent-gss)" }} />
+                        <h4 style={{ fontSize: "1.15rem", fontWeight: 700, color: "var(--text-primary)", display: "flex", alignItems: "center", gap: "8px" }}>
+                            <Building2 size={20} style={{ color: "var(--primary-gss-hover)" }} />
                             <span>{activeCity.name}</span>
                         </h4>
 
@@ -512,11 +513,11 @@ export default function Interactive3DGlobe() {
                         <div style={{ display: "flex", flexDirection: "column", gap: "0.6rem" }}>
                             <p style={{ color: "var(--text-light-muted)", fontSize: "0.95rem", margin: 0, display: "flex", alignItems: "center", gap: "10px" }}>
                                 <Phone size={18} style={{ color: "var(--secondary-gss)" }} />
-                                <a href={`tel:${activeCity.phone.replace(/[^0-9+]/g, '')}`} style={{ color: "var(--white)", textDecoration: "none" }}>{activeCity.phone}</a>
+                                <a href={`tel:${activeCity.phone.replace(/[^0-9+]/g, '')}`} style={{ color: "var(--text-primary)", textDecoration: "none" }}>{activeCity.phone}</a>
                             </p>
                             <p style={{ color: "var(--text-light-muted)", fontSize: "0.95rem", margin: 0, display: "flex", alignItems: "center", gap: "10px" }}>
                                 <Mail size={18} style={{ color: "var(--secondary-gss)" }} />
-                                <a href={`mailto:${activeCity.email}`} style={{ color: "var(--white)", textDecoration: "none" }}>{activeCity.email}</a>
+                                <a href={`mailto:${activeCity.email}`} style={{ color: "var(--text-primary)", textDecoration: "none" }}>{activeCity.email}</a>
                             </p>
                         </div>
                     </div>
